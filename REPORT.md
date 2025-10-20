@@ -158,24 +158,34 @@ Created comprehensive smoke test suite in `tests/test_smoke.py`:
 
 **Test Results**: All 7 tests passed ✅
 
-### 4.2 Running Tests
+### 4.2 Integration Tests Created
+
+Created integration test suite in `tests/test_integration.py` that validates:
+
+**Tests Included**:
+1. ✓ Environment creation with dummy data
+2. ✓ Environment reset functionality
+3. ✓ Environment step execution
+4. ✓ Action space validation (-50kW to +50kW in 5kW steps)
+5. ✓ Configuration override
+
+**Test Results**: All 5 tests passed ✅
+
+**Key Discovery**: Validated the exact data schema required:
+- Price data needs `price` column (cents/kWh)
+- Load data needs `load_kw` column (kW)
+- EV data needs `ev_demand_kw` column (kW, >0 means available)
+
+### 4.3 Running Tests
 
 ```bash
 cd /path/to/repo
+
+# Run smoke tests
 python3 tests/test_smoke.py
-```
 
-Expected output:
-```
-✓ test_standard_library_imports
-✓ test_project_imports
-✓ test_evves_env_class
-✓ test_prioritized_replay_buffer
-✓ test_gymnasium_compatibility
-✓ test_stable_baselines3_dqn
-✓ test_torch_available
-
-All 7 tests passed!
+# Run integration tests
+python3 tests/test_integration.py
 ```
 
 ---
@@ -242,7 +252,37 @@ To actually run training, you need:
 2. **Configuration file**:
    - SOH parameters: `--soh <path_to_soh_params.json>`
 
-3. **Example training command**:
+3. **Required Data Schema**:
+
+**Price Data** (`price.parquet`):
+```
+- timestamp: datetime
+- price: float (electricity price in cents/kWh)
+```
+
+**Load Data** (`load.parquet`):
+```
+- timestamp: datetime
+- load_kw: float (grid load demand in kW)
+```
+
+**EV Data** (`ev.parquet`):
+```
+- timestamp: datetime
+- ev_demand_kw: float (EV charging demand in kW, >0 indicates available)
+```
+
+**SOH Parameters** (`soh_params.json`):
+```json
+{
+  "calendar_aging": 0.0001,
+  "cycle_aging": 0.00005,
+  "temperature_factor": 1.0,
+  "depth_factor": 1.2
+}
+```
+
+4. **Example training command**:
 ```bash
 python3 train_dddqn.py \
   --load ../02_datasets/load_data.parquet \
@@ -253,7 +293,7 @@ python3 train_dddqn.py \
   --save_dir ./models
 ```
 
-**Note**: The raw data files exist in `02_datasets/data/` but may need preprocessing to convert to the required Parquet format.
+**Note**: The raw data files exist in `02_datasets/data/` but may need preprocessing to convert to the required Parquet format with the correct column names.
 
 ---
 
@@ -337,6 +377,8 @@ The repository contains raw data files but **no preprocessed Parquet files** are
 ✅ Fixed environment parameter order mismatch  
 ✅ Added comprehensive `.gitignore` file  
 ✅ Created smoke test suite with 100% pass rate  
+✅ Created integration test suite validating environment with dummy data  
+✅ Documented required data schema (column names and formats)  
 
 ### Current State
 
