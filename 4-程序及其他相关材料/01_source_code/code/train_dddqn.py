@@ -19,6 +19,7 @@ from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback,
 from stable_baselines3.common.monitor import Monitor
 from dddqn_per_sb3 import PrioritizedReplayBuffer
 from stable_baselines3.dqn.policies import DQNPolicy
+from evves_env import EVVESEnv
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -31,8 +32,9 @@ def make_env(load_data: pd.DataFrame, price_data: pd.DataFrame,
             ev_data: pd.DataFrame, soh_params: dict, seed: int = 0):
     """创建带随机种子的环境"""
     def _init():
-        env = EVVESEnv(load_data, price_data, ev_data, soh_params)
-        env.seed(seed)
+        # Convert soh_params to config format expected by EVVESEnv
+        config = {'soh_params': soh_params} if soh_params else None
+        env = EVVESEnv(price_data, load_data, ev_data, config)
         return env
     return _init
 
