@@ -1,5 +1,0 @@
-Using NMC linear coefficients from Aalto University master thesis (
-a=1.25×10^-4, b=2.0×10^-5, c=8.0×10^-4
-)
-aaltodoc.aalto.fi
-Write coefficients to soh_coeff.json for evaluation phase.
