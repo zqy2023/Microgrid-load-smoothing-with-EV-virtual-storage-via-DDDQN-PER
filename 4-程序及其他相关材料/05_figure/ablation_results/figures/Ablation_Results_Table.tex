@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{DDDQN-PER Ablation Study Results}
+\label{tab:ablation_results}
+\begin{tabular}{llcccc}
+\toprule
+Method & Components & Performance & Improvement & Improvement (\%) & Complexity \\
+\midrule
+Dueling DQN & Dueling & -0.520¡À0.145 & +0.161 & +23.6% & 1 \\
+DDDQN-PER & Dueling+Double+PER & -0.558¡À0.085 & +0.123 & +18.1% & 3 \\
+Double DQN & Double & -0.580¡À0.160 & +0.101 & +14.8% & 1 \\
+PER DQN & PER & -0.600¡À0.120 & +0.081 & +11.9% & 1 \\
+Vanilla DQN & None & -0.681¡À0.176 & +0.000 & +0.0% & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
