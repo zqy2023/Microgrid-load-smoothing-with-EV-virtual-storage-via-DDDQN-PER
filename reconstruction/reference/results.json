@@ -1,0 +1,521 @@
+{
+  "status": "complete_archived_experiment",
+  "primary_runs": 8,
+  "real_training_steps": 9600000,
+  "TD_updates": 2399944,
+  "groups": [
+    {
+      "method": "control",
+      "phase": "free_terminal",
+      "seeds": 4,
+      "statistics": {
+        "pooled_pct": {
+          "mean": 81.88450863520295,
+          "minimum": 81.67786888261136,
+          "maximum": 82.01496776016268
+        },
+        "daily_pct": {
+          "mean": 94.03275924512334,
+          "minimum": 93.85014498263597,
+          "maximum": 94.13613586022568
+        },
+        "saving_pct": {
+          "mean": 8.380653345668641,
+          "minimum": 8.25628473001922,
+          "maximum": 8.502609151515546
+        },
+        "energy_change_kwh": {
+          "mean": 18.73125000000034,
+          "minimum": 17.32499999999949,
+          "maximum": 19.550000000000296
+        }
+      }
+    },
+    {
+      "method": "control",
+      "phase": "equal_terminal_evaluation",
+      "seeds": 4,
+      "statistics": {
+        "pooled_pct": {
+          "mean": 77.2197099463784,
+          "minimum": 77.10380000385281,
+          "maximum": 77.26168394424352
+        },
+        "daily_pct": {
+          "mean": 93.020215382595,
+          "minimum": 92.88029650600562,
+          "maximum": 93.13173206125695
+        },
+        "saving_pct": {
+          "mean": 8.54146585945479,
+          "minimum": 8.428193662589386,
+          "maximum": 8.643723123333475
+        },
+        "energy_change_kwh": {
+          "mean": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      }
+    },
+    {
+      "method": "transfer",
+      "phase": "free_terminal",
+      "seeds": 4,
+      "statistics": {
+        "pooled_pct": {
+          "mean": 86.88072644706138,
+          "minimum": 86.47745129162173,
+          "maximum": 87.08958247946121
+        },
+        "daily_pct": {
+          "mean": 95.47454234951533,
+          "minimum": 95.35714980821335,
+          "maximum": 95.61097839333522
+        },
+        "saving_pct": {
+          "mean": 8.570841305788163,
+          "minimum": 8.503248599143122,
+          "maximum": 8.631089792877773
+        },
+        "energy_change_kwh": {
+          "mean": 33.73125000000003,
+          "minimum": 27.0000000000001,
+          "maximum": 37.5
+        }
+      }
+    },
+    {
+      "method": "transfer",
+      "phase": "equal_terminal_evaluation",
+      "seeds": 4,
+      "statistics": {
+        "pooled_pct": {
+          "mean": 78.74020935627888,
+          "minimum": 77.68538619205162,
+          "maximum": 80.2919239737437
+        },
+        "daily_pct": {
+          "mean": 94.26593144673478,
+          "minimum": 94.01821735161957,
+          "maximum": 94.68137690596112
+        },
+        "saving_pct": {
+          "mean": 8.858808468510192,
+          "minimum": 8.812962350120715,
+          "maximum": 8.915635254061556
+        },
+        "energy_change_kwh": {
+          "mean": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "run": "control_seed0",
+      "method": "control",
+      "seed": 0,
+      "phase": "free_terminal",
+      "pooled_pct": 81.9343325059419,
+      "daily_pct": 94.01695282145484,
+      "saving_pct": 8.25628473001922,
+      "baseline_bill": 408.7422186135168,
+      "bill": 374.9952972329871,
+      "final_energy_kwh": 57.050000000000296,
+      "energy_change_kwh": 19.550000000000296,
+      "energy_min_kwh": 15.574999999999811,
+      "energy_max_kwh": 58.175000000000274,
+      "power_min_kw": -1.0,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "control_seed0",
+      "method": "control",
+      "seed": 0,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 77.10380000385281,
+      "daily_pct": 92.95397137402637,
+      "saving_pct": 8.428193662589386,
+      "baseline_bill": 408.7422186135168,
+      "bill": 374.292632848005,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 15.574999999999811,
+      "energy_max_kwh": 58.175000000000274,
+      "power_min_kw": -1.0000000000000284,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 68,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "control_seed1",
+      "method": "control",
+      "seed": 1,
+      "phase": "free_terminal",
+      "pooled_pct": 82.01496776016268,
+      "daily_pct": 94.12780331617688,
+      "saving_pct": 8.46850171515793,
+      "baseline_bill": 408.7422186135168,
+      "bill": 374.1278768196564,
+      "final_energy_kwh": 56.97500000000193,
+      "energy_change_kwh": 19.475000000001927,
+      "energy_min_kwh": 14.749999999999032,
+      "energy_max_kwh": 57.07500000000172,
+      "power_min_kw": -1.0,
+      "power_max_kw": 0.8,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "control_seed1",
+      "method": "control",
+      "seed": 1,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 77.25365804450529,
+      "daily_pct": 93.11486158909108,
+      "saving_pct": 8.637947631775852,
+      "baseline_bill": 408.7422186135168,
+      "bill": 373.4352798207223,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 14.749999999999032,
+      "energy_max_kwh": 57.07500000000172,
+      "power_min_kw": -1.0000000000000284,
+      "power_max_kw": 0.8,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 67,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "control_seed2",
+      "method": "control",
+      "seed": 2,
+      "phase": "free_terminal",
+      "pooled_pct": 81.91086539209587,
+      "daily_pct": 94.13613586022568,
+      "saving_pct": 8.295217785981865,
+      "baseline_bill": 408.7422186135168,
+      "bill": 374.83616139627134,
+      "final_energy_kwh": 56.07499999999965,
+      "energy_change_kwh": 18.574999999999648,
+      "energy_min_kwh": 15.450000000000355,
+      "energy_max_kwh": 57.649999999999814,
+      "power_min_kw": -1.0,
+      "power_max_kw": 1.0,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "control_seed2",
+      "method": "control",
+      "seed": 2,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 77.25969779291204,
+      "daily_pct": 93.13173206125695,
+      "saving_pct": 8.455999020120451,
+      "baseline_bill": 408.7422186135168,
+      "bill": 374.1789806127391,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 15.450000000000355,
+      "energy_max_kwh": 57.649999999999814,
+      "power_min_kw": -1.0000000000000284,
+      "power_max_kw": 1.0,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 64,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "control_seed3",
+      "method": "control",
+      "seed": 3,
+      "phase": "free_terminal",
+      "pooled_pct": 81.67786888261136,
+      "daily_pct": 93.85014498263597,
+      "saving_pct": 8.502609151515546,
+      "baseline_bill": 408.7422186135168,
+      "bill": 373.9884653275762,
+      "final_energy_kwh": 54.82499999999949,
+      "energy_change_kwh": 17.32499999999949,
+      "energy_min_kwh": 13.9499999999996,
+      "energy_max_kwh": 55.599999999999795,
+      "power_min_kw": -1.0,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "control_seed3",
+      "method": "control",
+      "seed": 3,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 77.26168394424352,
+      "daily_pct": 92.88029650600562,
+      "saving_pct": 8.643723123333475,
+      "baseline_bill": 408.7422186135168,
+      "bill": 373.41167294839397,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 13.9499999999996,
+      "energy_max_kwh": 55.599999999999795,
+      "power_min_kw": -1.0000000000000284,
+      "power_max_kw": 0.8,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 59,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed0",
+      "method": "transfer",
+      "seed": 0,
+      "phase": "free_terminal",
+      "pooled_pct": 87.00089591284062,
+      "daily_pct": 95.51839505959896,
+      "saving_pct": 8.593373491956989,
+      "baseline_bill": 408.7422186135168,
+      "bill": 373.6174731487459,
+      "final_energy_kwh": 75.0,
+      "energy_change_kwh": 37.5,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 75.0,
+      "power_min_kw": -1.0,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed0",
+      "method": "transfer",
+      "seed": 0,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 77.68538619205162,
+      "daily_pct": 94.07588227429086,
+      "saving_pct": 8.915635254061556,
+      "baseline_bill": 408.7422186135168,
+      "bill": 372.3002532725767,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 72.75000000000009,
+      "power_min_kw": -1.0000000000000568,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 134,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed1",
+      "method": "transfer",
+      "seed": 1,
+      "phase": "free_terminal",
+      "pooled_pct": 86.47745129162173,
+      "daily_pct": 95.41164613691375,
+      "saving_pct": 8.631089792877773,
+      "baseline_bill": 408.7422186135168,
+      "bill": 373.4633107035833,
+      "final_energy_kwh": 64.5000000000001,
+      "energy_change_kwh": 27.0000000000001,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 64.5000000000001,
+      "power_min_kw": -1.0,
+      "power_max_kw": 0.8,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed1",
+      "method": "transfer",
+      "seed": 1,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 80.2919239737437,
+      "daily_pct": 94.28824925506764,
+      "saving_pct": 8.87764854086567,
+      "baseline_bill": 408.7422186135168,
+      "bill": 372.45552100687195,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 60.07500000000011,
+      "power_min_kw": -1.0000000000000284,
+      "power_max_kw": 0.8,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 91,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed2",
+      "method": "transfer",
+      "seed": 2,
+      "phase": "free_terminal",
+      "pooled_pct": 86.95497610432193,
+      "daily_pct": 95.35714980821335,
+      "saving_pct": 8.503248599143122,
+      "baseline_bill": 408.7422186135168,
+      "bill": 373.98585163515645,
+      "final_energy_kwh": 75.0,
+      "energy_change_kwh": 37.5,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 75.0,
+      "power_min_kw": -1.0,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed2",
+      "method": "transfer",
+      "seed": 2,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 77.76597326919072,
+      "daily_pct": 94.01821735161957,
+      "saving_pct": 8.812962350120715,
+      "baseline_bill": 408.7422186135168,
+      "bill": 372.7199207780594,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 71.55000000000064,
+      "power_min_kw": -1.0000000000000568,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 128,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed3",
+      "method": "transfer",
+      "seed": 3,
+      "phase": "free_terminal",
+      "pooled_pct": 87.08958247946121,
+      "daily_pct": 95.61097839333522,
+      "saving_pct": 8.55565333917477,
+      "baseline_bill": 408.7422186135168,
+      "bill": 373.7716513380923,
+      "final_energy_kwh": 70.42500000000001,
+      "energy_change_kwh": 32.92500000000001,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 70.42500000000001,
+      "power_min_kw": -1.0,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 0,
+      "availability_evaluation": "archived EV demand > 0.1"
+    },
+    {
+      "run": "transfer_seed3",
+      "method": "transfer",
+      "seed": 3,
+      "phase": "equal_terminal_evaluation",
+      "pooled_pct": 79.21755399012949,
+      "daily_pct": 94.68137690596112,
+      "saving_pct": 8.828987728992827,
+      "baseline_bill": 408.7422186135168,
+      "bill": 372.65441828891625,
+      "final_energy_kwh": 37.5,
+      "energy_change_kwh": 0.0,
+      "energy_min_kwh": 0.0,
+      "energy_max_kwh": 65.50000000000004,
+      "power_min_kw": -1.0000000000000284,
+      "power_max_kw": 0.9,
+      "unavailable_slots": 422,
+      "viability_adjusted_steps": 108,
+      "availability_evaluation": "archived EV demand > 0.1"
+    }
+  ],
+  "matched_pairs": [
+    {
+      "seed": 0,
+      "phase": "free_terminal",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 5.066563406898723,
+        "daily_pct": 1.5014422381441221,
+        "saving_pct": 0.3370887619377694,
+        "energy_change_kwh": 17.949999999999704
+      }
+    },
+    {
+      "seed": 1,
+      "phase": "free_terminal",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 4.462483531459057,
+        "daily_pct": 1.283842820736865,
+        "saving_pct": 0.1625880777198443,
+        "energy_change_kwh": 7.5249999999981725
+      }
+    },
+    {
+      "seed": 2,
+      "phase": "free_terminal",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 5.044110712226058,
+        "daily_pct": 1.2210139479876716,
+        "saving_pct": 0.2080308131612565,
+        "energy_change_kwh": 18.925000000000352
+      }
+    },
+    {
+      "seed": 3,
+      "phase": "free_terminal",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 5.41171359684985,
+        "daily_pct": 1.7608334106992487,
+        "saving_pct": 0.05304418765922314,
+        "energy_change_kwh": 15.60000000000052
+      }
+    },
+    {
+      "seed": 0,
+      "phase": "equal_terminal_evaluation",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 0.5815861881988127,
+        "daily_pct": 1.1219109002644956,
+        "saving_pct": 0.4874415914721695,
+        "energy_change_kwh": 0.0
+      }
+    },
+    {
+      "seed": 1,
+      "phase": "equal_terminal_evaluation",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 3.0382659292384204,
+        "daily_pct": 1.1733876659765627,
+        "saving_pct": 0.23970090908981767,
+        "energy_change_kwh": 0.0
+      }
+    },
+    {
+      "seed": 2,
+      "phase": "equal_terminal_evaluation",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 0.5062754762786881,
+        "daily_pct": 0.8864852903626144,
+        "saving_pct": 0.3569633300002639,
+        "energy_change_kwh": 0.0
+      }
+    },
+    {
+      "seed": 3,
+      "phase": "equal_terminal_evaluation",
+      "difference_transfer_minus_control": {
+        "pooled_pct": 1.9558700458859732,
+        "daily_pct": 1.8010803999554952,
+        "saving_pct": 0.1852646056593521,
+        "energy_change_kwh": 0.0
+      }
+    }
+  ],
+  "scope": "Four fixed seeds, same training/evaluation source window; descriptive means/ranges, not generalization. Teacher-assisted training; no teacher-only control."
+}

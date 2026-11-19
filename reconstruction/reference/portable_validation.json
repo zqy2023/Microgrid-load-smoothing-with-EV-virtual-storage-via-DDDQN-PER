@@ -1,0 +1,107 @@
+{
+  "status": "all_pass",
+  "scope": "Actual packaging validation; these engineering steps are separate from the archived scientific budget.",
+  "unchanged_AST_components": [
+    "train_single.Journal",
+    "train_single.require_formal",
+    "evaluation.RetunedEnv",
+    "evaluation.metrics",
+    "evaluation.evaluate",
+    "teacher.backward_table",
+    "native_helper.seed_all",
+    "native_helper.normalized_config",
+    "native_helper.UniformReplay",
+    "native_helper.make_agent",
+    "native_helper.expected_updates",
+    "MigrationEnv",
+    "priority_learner_byte_identity"
+  ],
+  "refined_training_prefix": {
+    "status": "all_pass",
+    "real_steps": 80032,
+    "TD_updates": 20001,
+    "teacher_stage1_updates": 19993,
+    "teacher_stage2_updates": 8,
+    "checked_replay_links": 640032,
+    "initial_model_all_12_tensors_equal": true,
+    "initial_trace_all_arrays_equal": true,
+    "chunks": [
+      {
+        "chunk": "chunk_00000.npz",
+        "transition_rows": 40000,
+        "TD_updates": 9993,
+        "arrays": 16,
+        "all_arrays_exactly_equal": true,
+        "portable_sha256": "d94b1cc630ea7a5aad587776d0979d35893168cc4147a78ff8becffcf75e7478",
+        "original_sha256": "d94b1cc630ea7a5aad587776d0979d35893168cc4147a78ff8becffcf75e7478"
+      },
+      {
+        "chunk": "chunk_00001.npz",
+        "transition_rows": 40000,
+        "TD_updates": 10000,
+        "arrays": 16,
+        "all_arrays_exactly_equal": true,
+        "portable_sha256": "64d900589e2458d8357ed4146d2b0098c2b1461b04e06f3337e9a8390f1e954a",
+        "original_sha256": "64d900589e2458d8357ed4146d2b0098c2b1461b04e06f3337e9a8390f1e954a"
+      },
+      {
+        "chunk": "chunk_00002.npz",
+        "transition_rows": 32,
+        "TD_updates": 8,
+        "arrays": 16,
+        "all_arrays_exactly_equal": true,
+        "portable_sha256": "5260890eb0cda5cfde1ff6cc1748f6103115dec9210bf1afe1073f140d3e65d9",
+        "original_sha256": "65aab6551205059c0bbe05d9a0ae507b4fab0bf09aa6645be103fb195cb01df1"
+      }
+    ],
+    "scope": "Exact original seed0 training prefix, including all stored transitions, TD sample indices/weights/losses and teacher argmax labels. No claim of another full1.2M run or recomputing unrecorded gradients."
+  },
+  "control_training_prefix": {
+    "real_steps": 2048,
+    "TD_updates": 505,
+    "all16_logged_arrays_equal_to_original_prefix": true
+  },
+  "independent_training_audits": [
+    {
+      "status": "all_pass",
+      "real_training_steps": 80032,
+      "TD_updates": 20001,
+      "checked_training_transitions": 80032,
+      "checked_replay_sample_links": 640032,
+      "checked_evaluation_windows": 3,
+      "checked_evaluation_rows": 52560,
+      "independent_Q_rows": 52560
+    },
+    {
+      "status": "all_pass",
+      "real_training_steps": 2048,
+      "TD_updates": 505,
+      "checked_training_transitions": 2048,
+      "checked_replay_sample_links": 16160,
+      "checked_evaluation_windows": 3,
+      "checked_evaluation_rows": 52560,
+      "independent_Q_rows": 52560
+    }
+  ],
+  "saved_evidence": {
+    "independent_windows": 24,
+    "independent_Q_rows": 420480,
+    "fresh_inference_windows": 16,
+    "all_arrays_exact": true
+  },
+  "teacher_rebuild": {
+    "status": "all_pass",
+    "value_table_sha256": "9c8230111666b73607ffb34a86ec997fb3022c9821ec7858b43c471678d7d329",
+    "offsets_sha256": "e039fcdfb7fd42871f1e8d357c520d4bfa77e53b0c1154aa3b1c4bc8b1c6ed29",
+    "built_from_bundled_inputs": true
+  },
+  "engineering_real_steps": 82080,
+  "engineering_TD_updates": 20506,
+  "no_full_budget_retraining_during_packaging": true,
+  "original_validation_receipt_sha256": {
+    "prefix_equivalence.json": "72fdd6c5eac19777831930dd23fe30a20890608733f76f34f5877169c4521d76",
+    "refined_smoke_audit.json": "a28bd20c103269e6c9749176bbae410f3d676cf8c8f0ba5707621504697128e4",
+    "control_smoke_audit.json": "250fbc3256d7f48adfbc4e1c35a7f7c36f27843dd228197048f9d8e7fbb48083",
+    "receipt.json": "6e5fb0dea1310348bf38ba8922237ce5f73b88680b2bbf8f64f536c1d35921e4"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "ports": [
+    {
+      "file": "data/price_15min_fullyear.parquet",
+      "original_sha256": "35424a55e2e5eefaabe64b184ec82a8cb898595eb8e54dfeda8bf52d8f0fb838",
+      "packaged_sha256": "35424a55e2e5eefaabe64b184ec82a8cb898595eb8e54dfeda8bf52d8f0fb838",
+      "byte_identical": true
+    },
+    {
+      "file": "data/load_15min_fullyear.parquet",
+      "original_sha256": "e8089a38c28a742927b58765205093a8f3fd317b751c18065a268148182fe805",
+      "packaged_sha256": "e8089a38c28a742927b58765205093a8f3fd317b751c18065a268148182fe805",
+      "byte_identical": true
+    },
+    {
+      "file": "data/ev_demand_15min_fullyear.parquet",
+      "original_sha256": "c84eec7a97bee6515719fe935ebcccf68dcf51c14e339da4ea8f17ccbbbe8778",
+      "packaged_sha256": "c84eec7a97bee6515719fe935ebcccf68dcf51c14e339da4ea8f17ccbbbe8778",
+      "byte_identical": true
+    },
+    {
+      "file": "data/soh_params_fullyear.json",
+      "original_sha256": "eda1f3a51ebdf83f9938ead5360bc250236e93312a0d4672634af15b303c60f6",
+      "packaged_sha256": "eda1f3a51ebdf83f9938ead5360bc250236e93312a0d4672634af15b303c60f6",
+      "byte_identical": true
+    },
+    {
+      "file": "src/native_dddqn_per_sb3.py",
+      "original_sha256": "0f0d6db3fa25b17999b2238ce6a2f4b064b7303abe59a7cc064d17eb52194ca3",
+      "packaged_sha256": "0f0d6db3fa25b17999b2238ce6a2f4b064b7303abe59a7cc064d17eb52194ca3",
+      "byte_identical": true
+    },
+    {
+      "file": "src/migration_env.py",
+      "original_sha256": "66a97bfeb82e8fb100485bda1fac93dfdb84e8c3184e4be0af122be8f4c65931",
+      "packaged_sha256": "155a96cee599eb7b34e4b052de1bdb9cda97d63d2c5ec6806e1125ab15d0841b",
+      "byte_identical": false
+    },
+    {
+      "file": "src/evaluate_single.py",
+      "original_sha256": "341a27d109773fb8b52424688cf793470f5cc6af061d9587ba539bb46cac7c78",
+      "packaged_sha256": "234ad94961657aa22d8d5a0bf1d47fa8c183cedbc6fbd6bc2e274b0f8eb434a9",
+      "byte_identical": false
+    },
+    {
+      "file": "src/priority_learner.py",
+      "original_sha256": "1030dae95e81830610176d557dec0f2c2d648cb5a44f8195577c94f63edbd466",
+      "packaged_sha256": "1030dae95e81830610176d557dec0f2c2d648cb5a44f8195577c94f63edbd466",
+      "byte_identical": true
+    },
+    {
+      "file": "src/teaching_targets.py",
+      "original_sha256": "6cf17bc5e8ef3168cc646126774eb36e1dcfa062604433f2fd4efe4dce53be96",
+      "packaged_sha256": "2cd8ffeb44c43820511d9619673ec3f07e5a63313dcafede76e721698922e059",
+      "byte_identical": false
+    },
+    {
+      "file": "src/offline_teacher.py",
+      "original_sha256": "409859b8e69f584132efe9c7445c474ee2de4ffca2bdf9a7d1af9e1a7c64f6d8",
+      "packaged_sha256": "409859b8e69f584132efe9c7445c474ee2de4ffca2bdf9a7d1af9e1a7c64f6d8",
+      "byte_identical": true
+    },
+    {
+      "file": "src/teacher.py",
+      "original_sha256": "38b4d7322e88f7a58802d0a094a037031cec21b72d59825811a1c1be25b8f041",
+      "packaged_sha256": "db0b3eb4edffd38797ff42d8f396c9b1101ea655bc8102fe677d9f7ae390b79c",
+      "byte_identical": false
+    },
+    {
+      "file": "config/full.json",
+      "original_sha256": "49b27935c765a83d7e84edc981ae05d865e91dac9496a434d1a77fa020e4f96e",
+      "packaged_sha256": "49b27935c765a83d7e84edc981ae05d865e91dac9496a434d1a77fa020e4f96e",
+      "byte_identical": true
+    },
+    {
+      "file": "src/train_single.py",
+      "original_sha256": "01fad38799de2a8d00cf759c64683485d4e7e69ae2342ae88199c581d4c4b746",
+      "packaged_sha256": "3e325596bcfde3764fbdcf865856e2a7c23e5c572d44b4b7f57629f7ceaadbf7",
+      "byte_identical": false
+    },
+    {
+      "file": "audit/reference_core.py",
+      "original_sha256": "f6a105f81950ab72de9285063f9affbbe3e6128748daa298ccc91d271af57ac8",
+      "packaged_sha256": "535013dcf8eed171da2fee51417b8b9cbed048fc4838d34e481ed4f552a9a710",
+      "byte_identical": false
+    }
+  ],
+  "teacher_models": [
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_00.pt",
+      "sha256": "04da45e362fb18b4013d561c29e69dca07dae898168e62e07c447cf4615c1c59",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "b66a52219515da96696dd0389f71a90c6af477a54aabeb900565c5eee62a021e",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_01.pt",
+      "sha256": "cf9d82a7f4cd3cf29ad94bad55c76fa18da4d3c2648aa91108487462f5ec1954",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "71cd0eb1e2844d0f1a54f6f93ceaa8089338774f28da3f8d54a351233412bfa0",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_02.pt",
+      "sha256": "bfc0eadecdc4bc6eafc7be6a35a4345824d850d829cbd579adee3a90a5ef0835",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "e6cc907e7ca12a9c31a0af0d1cfc4b3ffaca3bbbdbc1468351d0e152d265b424",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_03.pt",
+      "sha256": "9a3dc9892813ae7fb530049ea7ae3218768c7a61a8942144fb3412535c8f808f",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "7a574547bd84a069dc3cdc6316d7536bcb03c0b1048506e4243fa6ea8c4a6102",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_04.pt",
+      "sha256": "f9f9600ba362ec1693f80937b63d7e0aa860ba111b75c637cd6fa6e37dbf8efa",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "7d86c18b37195973be0ea0c95626b91b939edd16e9c8b51468d2528ee8343e15",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_05.pt",
+      "sha256": "d7eeb1b0edf3b4d396d113531737e2eba95a5c5e3e4a5bf3fcb4bbbf03eb3b75",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "8c043c4d68a1ffb7c6bd47e2ff75482bf3d1efa7a95b390cc14539e79aa410d6",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_06.pt",
+      "sha256": "1fa4e84f3cdd66c3e04bd9cf8d74413b23b551fd1c2a309e3ac2aeb091b7a327",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "d96f05a55613726f49748c42905f21383dfab6e753f5a6e1094c8a42d49ba4e5",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_07.pt",
+      "sha256": "330579c74aee124cb28f41f2040411a815be9f8bcb9390437c4e22ab45b3fea5",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "f9ff133c66b8f58988f65cf95e262055026bf6ff9c9f758e2d36c8a255ca1901",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "cost",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_08.pt",
+      "sha256": "6c5fe8aaa31054215a2f9e040dc064980f96015ee4f3587b48113fa980651bab",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "6c5fe8aaa31054215a2f9e040dc064980f96015ee4f3587b48113fa980651bab",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "cost",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_09.pt",
+      "sha256": "dc4fa7cb113e4f316241a0aa2e421edb5ffba5376d17c994557ae021ffc3aacf",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "dc4fa7cb113e4f316241a0aa2e421edb5ffba5376d17c994557ae021ffc3aacf",
+      "all_weight_tensors_preserved": true
+    }
+  ],
+  "rule": "Original host paths and personal identifiers are intentionally omitted. Original SHA256 identities are retained; path/import-only ports are declared.",
+  "portable_changes": [
+    "Replace host-specific imports and input/model paths with package-relative paths.",
+    "Extract unchanged native agent/configuration helpers into portable_runtime.py.",
+    "Extract unchanged evaluation equations and wrapper into evaluation.py.",
+    "Add explicit new output directory for the original training entry; preserve the training loop and logging.",
+    "Strip teacher checkpoint metadata; preserve all named FP32 weight tensors exactly.",
+    "Regenerate only the already selected beta2 teacher, using the unchanged backward_table function.",
+    "Add manifest-checked public CLI and independent package-relative audit adapters.",
+    "Change data manifest paths to package-relative paths; no physical, reward, observation or training mathematics changes."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "description": "B fixed inventory target, native full budget, full",
+  "data": {},
+  "environment": {
+    "mode": "migration",
+    "episode_length": 17520,
+    "action_grid": [
+      -1.0,
+      -0.9,
+      -0.8,
+      -0.7,
+      -0.6,
+      -0.5,
+      -0.4,
+      -0.3,
+      -0.2,
+      -0.1,
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "observation_mode": "normalized15",
+    "reward_mode": "quadratic_inventory",
+    "smooth_weight": 1.0,
+    "economic_weight": 0.02,
+    "soc_weight": 0.0,
+    "soh_weight": 0.0
+  },
+  "training": {
+    "algorithm": "full",
+    "dropout": 0.0,
+    "epsilon_schedule": "linear120k",
+    "linear_steps": 120000,
+    "linear_final_epsilon": 0.05
+  }
+}

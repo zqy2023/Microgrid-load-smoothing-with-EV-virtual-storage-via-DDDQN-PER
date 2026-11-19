@@ -1,0 +1,27 @@
+{
+  "schema": "portable_selected_offline_teacher_v1",
+  "beta": 2,
+  "teacher_source_file": "../src/teacher.py",
+  "teacher_source_sha256": "db0b3eb4edffd38797ff42d8f396c9b1101ea655bc8102fe677d9f7ae390b79c",
+  "builder_source_file": "../src/build_teacher.py",
+  "builder_sha256": "7cff3955f71b62e0e4dc44a8b34320cd9b573f9a46a853c21cd7b4aeaffe3e85",
+  "protocol_file": "teacher_build.json",
+  "protocol_sha256": "18e1177473c0e05893048c93eeb6ddda618620422b310eb3c122b4fc4b3163f5",
+  "input_sha256": {
+    "load_15min_fullyear.parquet": "e8089a38c28a742927b58765205093a8f3fd317b751c18065a268148182fe805",
+    "price_15min_fullyear.parquet": "35424a55e2e5eefaabe64b184ec82a8cb898595eb8e54dfeda8bf52d8f0fb838",
+    "ev_demand_15min_fullyear.parquet": "c84eec7a97bee6515719fe935ebcccf68dcf51c14e339da4ea8f17ccbbbe8778",
+    "soh_params_fullyear.json": "eda1f3a51ebdf83f9938ead5360bc250236e93312a0d4672634af15b303c60f6"
+  },
+  "value_table_file": "../cache/teacher/value_table.npy",
+  "value_table_sha256": "9c8230111666b73607ffb34a86ec997fb3022c9821ec7858b43c471678d7d329",
+  "offsets_file": "../cache/teacher/offsets.npy",
+  "offsets_sha256": "e039fcdfb7fd42871f1e8d357c520d4bfa77e53b0c1154aa3b1c4bc8b1c6ed29",
+  "value_table_shape": [
+    17521,
+    3001
+  ],
+  "dtype": "float64",
+  "information": "Full future offline training supervision",
+  "original_selected_manifest_sha256": "059ce1ee12152992cb01d2a9e16d99a2973053f6f75289815e3964602056485e"
+}

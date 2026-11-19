@@ -1,0 +1,40 @@
+{
+  "method": "Fixed selected beta=2 offline dynamic-program teacher",
+  "beta": 2,
+  "rows": 17520,
+  "capacity_kwh": 75,
+  "initial_energy_kwh": 37.5,
+  "dt_hours": 0.25,
+  "action_grid": [
+    -1.0,
+    -0.9,
+    -0.8,
+    -0.7,
+    -0.6,
+    -0.5,
+    -0.4,
+    -0.3,
+    -0.2,
+    -0.1,
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "energy_grid_step_kwh": 0.025,
+  "shape": [
+    17521,
+    3001
+  ],
+  "dtype": "float64",
+  "stage_cost": "P_actual^2 + 2*(L - mean(L))*P_actual + 2*P_actual*price/4000",
+  "terminal_value": "-((E - 37.5)*4)^2/17520",
+  "scope": "Full-future teacher used only during training. This is a rebuild of the selected historical teacher, not another search."
+}

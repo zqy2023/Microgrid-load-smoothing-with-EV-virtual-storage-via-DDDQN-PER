@@ -1,0 +1,6 @@
+{
+  "a": 1e-06,
+  "b": 2e-06,
+  "c": 5e-07,
+  "description": "Battery degradation parameters for fullyear training"
+}

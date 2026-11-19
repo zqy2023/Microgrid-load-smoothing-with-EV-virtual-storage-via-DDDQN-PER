@@ -1,0 +1,23 @@
+{
+  "status": "frozen",
+  "method": "control",
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "steps_per_seed": 1200000,
+  "source_sha256": {
+    "portable_runtime.py": "d783c09887c697cc2f14c7cec2ba44ba7a1b11fa1ae085b6009d132040965922",
+    "migration_env.py": "155a96cee599eb7b34e4b052de1bdb9cda97d63d2c5ec6806e1125ab15d0841b",
+    "native_dddqn_per_sb3.py": "0f0d6db3fa25b17999b2238ce6a2f4b064b7303abe59a7cc064d17eb52194ca3",
+    "train_single.py": "3e325596bcfde3764fbdcf865856e2a7c23e5c572d44b4b7f57629f7ceaadbf7",
+    "priority_learner.py": "1030dae95e81830610176d557dec0f2c2d648cb5a44f8195577c94f63edbd466",
+    "teaching_targets.py": "2cd8ffeb44c43820511d9619673ec3f07e5a63313dcafede76e721698922e059",
+    "evaluate_single.py": "234ad94961657aa22d8d5a0bf1d47fa8c183cedbc6fbd6bc2e274b0f8eb434a9",
+    "full.json": "49b27935c765a83d7e84edc981ae05d865e91dac9496a434d1a77fa020e4f96e"
+  },
+  "teacher_manifest_sha256": null,
+  "scope": "Portable implementation of the completed experiment. No claim that a new full-budget rerun was performed to package it."
+}

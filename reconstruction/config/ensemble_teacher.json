@@ -1,0 +1,116 @@
+{
+  "rule": "objective-blend",
+  "weight": 0.1,
+  "inputs": {
+    "price": {
+      "path": "data/price_15min_fullyear.parquet",
+      "sha256": "35424a55e2e5eefaabe64b184ec82a8cb898595eb8e54dfeda8bf52d8f0fb838"
+    },
+    "load": {
+      "path": "data/load_15min_fullyear.parquet",
+      "sha256": "e8089a38c28a742927b58765205093a8f3fd317b751c18065a268148182fe805"
+    },
+    "ev": {
+      "path": "data/ev_demand_15min_fullyear.parquet",
+      "sha256": "c84eec7a97bee6515719fe935ebcccf68dcf51c14e339da4ea8f17ccbbbe8778"
+    },
+    "soh": {
+      "path": "data/soh_params_fullyear.json",
+      "sha256": "eda1f3a51ebdf83f9938ead5360bc250236e93312a0d4672634af15b303c60f6"
+    }
+  },
+  "members": [
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_00.pt",
+      "sha256": "04da45e362fb18b4013d561c29e69dca07dae898168e62e07c447cf4615c1c59",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "b66a52219515da96696dd0389f71a90c6af477a54aabeb900565c5eee62a021e",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_01.pt",
+      "sha256": "cf9d82a7f4cd3cf29ad94bad55c76fa18da4d3c2648aa91108487462f5ec1954",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "71cd0eb1e2844d0f1a54f6f93ceaa8089338774f28da3f8d54a351233412bfa0",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_02.pt",
+      "sha256": "bfc0eadecdc4bc6eafc7be6a35a4345824d850d829cbd579adee3a90a5ef0835",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "e6cc907e7ca12a9c31a0af0d1cfc4b3ffaca3bbbdbc1468351d0e152d265b424",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_03.pt",
+      "sha256": "9a3dc9892813ae7fb530049ea7ae3218768c7a61a8942144fb3412535c8f808f",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "7a574547bd84a069dc3cdc6316d7536bcb03c0b1048506e4243fa6ea8c4a6102",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_04.pt",
+      "sha256": "f9f9600ba362ec1693f80937b63d7e0aa860ba111b75c637cd6fa6e37dbf8efa",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "7d86c18b37195973be0ea0c95626b91b939edd16e9c8b51468d2528ee8343e15",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_05.pt",
+      "sha256": "d7eeb1b0edf3b4d396d113531737e2eba95a5c5e3e4a5bf3fcb4bbbf03eb3b75",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "8c043c4d68a1ffb7c6bd47e2ff75482bf3d1efa7a95b390cc14539e79aa410d6",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_06.pt",
+      "sha256": "1fa4e84f3cdd66c3e04bd9cf8d74413b23b551fd1c2a309e3ac2aeb091b7a327",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "d96f05a55613726f49748c42905f21383dfab6e753f5a6e1094c8a42d49ba4e5",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "base",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_07.pt",
+      "sha256": "330579c74aee124cb28f41f2040411a815be9f8bcb9390437c4e22ab45b3fea5",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "f9ff133c66b8f58988f65cf95e262055026bf6ff9c9f758e2d36c8a255ca1901",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "cost",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_08.pt",
+      "sha256": "6c5fe8aaa31054215a2f9e040dc064980f96015ee4f3587b48113fa980651bab",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "6c5fe8aaa31054215a2f9e040dc064980f96015ee4f3587b48113fa980651bab",
+      "all_weight_tensors_preserved": true
+    },
+    {
+      "role": "cost",
+      "kind": "portable_state_dict",
+      "path": "models/teachers/member_09.pt",
+      "sha256": "dc4fa7cb113e4f316241a0aa2e421edb5ffba5376d17c994557ae021ffc3aacf",
+      "bytes": 150194,
+      "original_checkpoint_sha256": "dc4fa7cb113e4f316241a0aa2e421edb5ffba5376d17c994557ae021ffc3aacf",
+      "all_weight_tensors_preserved": true
+    }
+  ],
+  "training_only": true,
+  "original_receipt_sha256": "fc3100c93772a616efff4b302f127df5a2db0ff29d1ba5b3e62cdc3e52348956"
+}
