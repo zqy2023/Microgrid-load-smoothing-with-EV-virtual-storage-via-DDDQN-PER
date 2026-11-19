@@ -1,29 +1,35 @@
 # EV virtual storage load smoothing
 
-This repository's current experiment is a 2026 reconstruction on the processed inputs preserved in the undergraduate submission archive. It compares a teacher-assisted single 21-action Dueling Double DQN with prioritized replay (DDDQN/PER) to the same learner trained without teacher guidance. See the [reproduction package](reconstruction/) for the training, evaluation and verification commands.
+This repository supports the current Chinese and English capstone manuscripts. It compares the proposed single-network DDDQN/PER controller with time-of-use scheduling (ToU), six-step model predictive control (MPC) and grid-quantised deep deterministic policy gradient (DDPG). Zero storage supplies the common load variance and billing reference.
 
-The historical NEU thesis and UTS Capstone results are a separate record. This study does not authenticate the historical raw data, recover its original checkpoints, or verify the 98.9% variance-reduction and 44.7% cost-saving claims.
+## Primary comparison
 
-## Measured results
+The main window contains 17,520 archived 15-minute intervals from 1 January 2023 through 2 July 2023 at 11:45. All methods use the same 75 kWh equivalent storage, 37.5 kWh starting energy, availability gate and signed electricity bill. The 21 candidate power commands span −1 to +1 kW in 0.1 kW increments. The table uses the same terminal rule for all dispatch methods, returning storage to 37.5 kWh with archived future availability.
 
-Each arm used four matched seeds and 1,200,000 interactions per seed. The processed simulation used the same 17,520 archived rows, a 75 kWh equivalent storage unit, and 21 fixed action commands from −1 to +1 kW at 0.1 kW intervals.
+| Method | Whole-window variance reduction | Within-day variance reduction | Bill saving |
+| --- | ---: | ---: | ---: |
+| DDDQN/PER | 78.74% | 94.27% | 8.86% |
+| ToU | −78.44% | −92.84% | 17.84% |
+| MPC | 78.73% | 94.79% | 8.70% |
+| DDPG | 78.12% | 94.00% | 8.56% |
+| Zero storage | 0.00% | 0.00% | 0.00% |
 
-| Free terminal inventory, same window | Full-window variance reduction | Intraday variance reduction | Modeled bill savings |
-|---|---:|---:|---:|
-| Unassisted DDDQN/PER, four-seed mean | 81.88% | 94.03% | 8.38% |
-| Historical ten-network ensemble reference | 82.96% | 95.27% | 8.48% |
-| Teacher-assisted single network, four-seed mean | 86.88% | 95.47% | 8.57% |
-| Matched single-network improvement | +5.00 pp | +1.44 pp | +0.19 pp |
+Each learning method uses four seeds at 1.2 million interactions per seed. DDDQN/PER combines temporal-difference learning with auxiliary action targets from ten frozen models over the first 80,000 interactions and a full-window offline dynamic program thereafter. At inference, one learned network chooses among the 21 candidate commands. DDPG outputs a continuous proposal, which the environment maps to the same candidate grid. MPC uses a short recorded lookahead. ToU uses fixed hours calibrated from the first 28 archived days.
 
-All four students exceeded the ensemble on all three free-terminal metrics. Mean terminal energy was 71.23 kWh for the students and 56.23 kWh for the controls. In a separate assessment with both groups returned to 37.5 kWh by the same execution rule, the students achieved 78.74%, 94.27% and 8.86%. The matched improvements in that assessment were 1.52, 1.25 and 0.32 percentage points. Bill savings use the same-window idle-storage bill as denominator. The terminal execution rule consults archived future availability.
+The proposed method has a small mean advantage over DDPG in this window. Its pooled variance reduction is close to MPC's, and MPC achieves better within-day smoothing. ToU saves more on the bill and increases both variance measures. The proposed method's peak-to-valley gap increases by 20.20% under the equal-terminal rule. The later archive and the independent load and price sensitivity yield different rankings. [Read the measured results and scope](REPORT.md).
 
-Training uses an existing ensemble and a full-window offline schedule as teaching signals. Inference selects an action from a single network. The policy was trained and evaluated on the same archived window. This comparison measures teaching added to DDDQN/PER on that window; it does not isolate a PER advantage, establish generalization, or test a physical vehicle fleet.
+## Reproduce the results
 
-## Project materials
+~~~sh
+python -m pip install -r requirements.txt
+python benchmark/run.py verify --output comparison_check
+python benchmark/run.py verify --scope archive --output archive_check
+~~~
 
-- [Run instructions and validation scope](reconstruction/README.md)
-- [Result summary](REPORT.md)
-- [Historical main snapshot](https://github.com/zqy2023/Microgrid-load-smoothing-with-EV-virtual-storage-via-DDDQN-PER/tree/522396cc3f068935fd9e0b7ce33e458b943157de)
-- [Historical distributional DQN branch](https://github.com/zqy2023/Microgrid-load-smoothing-with-EV-virtual-storage-via-DDDQN-PER/tree/feature/distributional-dqn)
+The first verification command replays the main comparison from repository assets. The second replays the later archive, seasonal windows and availability sensitivity. Both use saved model weights and add zero training interactions. Consult [benchmark instructions](benchmark/README.md) for the separate training commands and the optional external-data check.
 
-当前主分支以 2026 年归档数据重建为复现实验入口。中英文 2025 原稿、早期代码和 QR-DQN 支线为历史资料。复跑、模型和核验请从上面的新包入口开始。
+[The core reconstruction package](reconstruction/README.md) contains the original training code, archived inputs, model weights and frozen audit evidence. Paths and method labels in that archive can differ from the current manuscript labels. The current DDDQN/PER checkpoints use the stored transfer configuration.
+
+## 中文说明
+
+本仓库与新版中英文论文使用同一实验口径。正文主比较为本文 DDDQN/PER、ToU、MPC、DDPG 和无储能基线。表中采用统一期末电量 37.5 kWh。可用上面的入口从仓库文件重放，并在结果报告查看自由期末、归档后半年及外部四季的适用边界。

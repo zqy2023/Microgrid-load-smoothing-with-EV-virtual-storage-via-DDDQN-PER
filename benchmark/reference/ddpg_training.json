@@ -1,0 +1,204 @@
+{
+  "schema": "comparison_ddpg_training_v1",
+  "scope": "Archived full-budget DDPG training and evaluation. Public verification replays the four saved policies without new training.",
+  "independent_audit_sha256": "0256f6fd4bdd4f29cf1232c8fd816a6e6dfd5b5dee52257b6e05d697c5610bec",
+  "total_environment_interactions": 4800000,
+  "runs": [
+    {
+      "seed": 0,
+      "source_receipt_sha256": "77969d30b93b0607902ecc05bf0bc1c2018e50e24648b25544a27f9f963c597c",
+      "model": {
+        "path": "models/ddpg/seed0.zip",
+        "bytes": 635342,
+        "sha256": "4312f21896ebbbc0989fef99657551d921eccb144ac5c7aec1b9783f0b5d9be0"
+      },
+      "training": {
+        "environment_interactions": 1200000,
+        "gradient_updates": 299993
+      },
+      "learning_curve": {
+        "path": "reference/ddpg_seed0_learning.csv",
+        "sha256": "8d8b93e0884871c776874b5652f022e8cb13d570acace79f9c9878a94a1a2b7d"
+      },
+      "free_terminal": {
+        "pooled_pct": 82.4750939377365,
+        "daily_pct": 94.9139361904887,
+        "saving_pct": 8.70385039532349,
+        "baseline_bill": 408.7422186135168,
+        "bill": 373.1659074028701,
+        "final_energy_kwh": 53.37499999999976,
+        "energy_change_kwh": 15.874999999999758,
+        "energy_min_kwh": 11.775000000000054,
+        "energy_max_kwh": 56.1249999999999,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1"
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 78.3716185352118,
+        "daily_pct": 94.09984243282928,
+        "saving_pct": 8.822283179988672,
+        "baseline_bill": 408.7422186135168,
+        "bill": 372.68182261126384,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 11.775000000000054,
+        "energy_max_kwh": 56.1249999999999,
+        "power_min_kw": -1.0000000000000284,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 53,
+        "availability_evaluation": "archived EV demand > 0.1"
+      }
+    },
+    {
+      "seed": 1,
+      "source_receipt_sha256": "ca1f67005b55183610657cfc0ef177c176fd7f664dd7bcb104e756fd5fd77c36",
+      "model": {
+        "path": "models/ddpg/seed1.zip",
+        "bytes": 635342,
+        "sha256": "48c0e72071439effbf206c4ef7d870e99af16727bcf9edd77b5932c8ef1a8b0f"
+      },
+      "training": {
+        "environment_interactions": 1200000,
+        "gradient_updates": 299993
+      },
+      "learning_curve": {
+        "path": "reference/ddpg_seed1_learning.csv",
+        "sha256": "de543063343b9e324605396683428d3698de2547edb39a7044fdf5c76ff00f88"
+      },
+      "free_terminal": {
+        "pooled_pct": 82.43703721717992,
+        "daily_pct": 94.78069060207564,
+        "saving_pct": 8.454689313195775,
+        "baseline_bill": 408.7422186135168,
+        "bill": 374.1843339378804,
+        "final_energy_kwh": 57.25000000000017,
+        "energy_change_kwh": 19.75000000000017,
+        "energy_min_kwh": 14.875000000000083,
+        "energy_max_kwh": 57.775000000000226,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1"
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.50591134331792,
+        "daily_pct": 93.7789366881966,
+        "saving_pct": 8.632694834883802,
+        "baseline_bill": 408.7422186135168,
+        "bill": 373.45675021927826,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 14.875000000000083,
+        "energy_max_kwh": 57.775000000000226,
+        "power_min_kw": -1.0000000000000284,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 71,
+        "availability_evaluation": "archived EV demand > 0.1"
+      }
+    },
+    {
+      "seed": 2,
+      "source_receipt_sha256": "baf4725d60e166148ce7f24387b90b01fde71ac9daaeaf25672b9624ac6c7245",
+      "model": {
+        "path": "models/ddpg/seed2.zip",
+        "bytes": 635342,
+        "sha256": "e6f0b28a29f8d6e56f685de04679ef61609c9dfd95b4bc75e8fc006cfc73217f"
+      },
+      "training": {
+        "environment_interactions": 1200000,
+        "gradient_updates": 299993
+      },
+      "learning_curve": {
+        "path": "reference/ddpg_seed2_learning.csv",
+        "sha256": "e867bbd655d954c3038b60b409e6edbd45167382a1e63f0b903bb03856f848f6"
+      },
+      "free_terminal": {
+        "pooled_pct": 82.87903759798073,
+        "daily_pct": 95.12180024735528,
+        "saving_pct": 8.183056227748834,
+        "baseline_bill": 408.7422186135168,
+        "bill": 375.29461303782455,
+        "final_energy_kwh": 55.974999999999255,
+        "energy_change_kwh": 18.474999999999255,
+        "energy_min_kwh": 15.47499999999988,
+        "energy_max_kwh": 56.52499999999948,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1"
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 78.25294239623466,
+        "daily_pct": 94.11131471253424,
+        "saving_pct": 8.341677834083956,
+        "baseline_bill": 408.7422186135168,
+        "bill": 374.64625956489,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 15.47499999999988,
+        "energy_max_kwh": 56.52499999999948,
+        "power_min_kw": -1.0000000000000284,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 64,
+        "availability_evaluation": "archived EV demand > 0.1"
+      }
+    },
+    {
+      "seed": 3,
+      "source_receipt_sha256": "0166739bff1c8c5c2a8877d732932f2d2b839527f41269ec2fa9b590140b73c8",
+      "model": {
+        "path": "models/ddpg/seed3.zip",
+        "bytes": 635346,
+        "sha256": "a7015e83584858f5cd9f5f089079dd0713c936477d8efeb9c5b5c7ef10c4b7a2"
+      },
+      "training": {
+        "environment_interactions": 1200000,
+        "gradient_updates": 299993
+      },
+      "learning_curve": {
+        "path": "reference/ddpg_seed3_learning.csv",
+        "sha256": "e599c974d663422622f5ca9d5c1a0002ca2cc83bcbce069a671be97b05e5bced"
+      },
+      "free_terminal": {
+        "pooled_pct": 82.36465578615963,
+        "daily_pct": 94.76947384681853,
+        "saving_pct": 8.346554367778094,
+        "baseline_bill": 408.7422186135168,
+        "bill": 374.6263271128771,
+        "final_energy_kwh": 53.02499999999903,
+        "energy_change_kwh": 15.524999999999032,
+        "energy_min_kwh": 15.249999999999972,
+        "energy_max_kwh": 54.04999999999934,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.8,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1"
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 78.35144380458566,
+        "daily_pct": 94.00250506784573,
+        "saving_pct": 8.460428238535371,
+        "baseline_bill": 408.7422186135168,
+        "bill": 374.1608765271227,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 15.249999999999972,
+        "energy_max_kwh": 54.04999999999934,
+        "power_min_kw": -1.0000000000000284,
+        "power_max_kw": 0.8,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 52,
+        "availability_evaluation": "archived EV demand > 0.1"
+      }
+    }
+  ]
+}

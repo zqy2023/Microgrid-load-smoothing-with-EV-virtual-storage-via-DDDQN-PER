@@ -1,0 +1,12 @@
+{
+  "archive_rows": 17520,
+  "tou": {
+    "calibration_complete_days": 28,
+    "band_slots": 24
+  },
+  "mpc": {
+    "horizon_steps": 6,
+    "replans_per_step": 1
+  },
+  "protocol_scope": "Fixed archive replay and in-window ToU calibration; no held-out claim or hardware test."
+}

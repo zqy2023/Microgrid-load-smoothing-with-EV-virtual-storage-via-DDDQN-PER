@@ -1,0 +1,93 @@
+{
+  "schema": "thesis_benchmark_payload_v1",
+  "files": {
+    "baseline_ddpg/run_ddpg.py": {
+      "bytes": 11660,
+      "sha256": "81b0f9e0a57b2339108a60bf3060896f04894e7edc0f8bb05c7b3592e769fb14"
+    },
+    "baselines_tou_mpc/protocol.json": {
+      "bytes": 279,
+      "sha256": "b9f4671a026bdfecc36eb7dc03c03c9c4fbf61b8c8652b0528788b74994244ee"
+    },
+    "baselines_tou_mpc/run.py": {
+      "bytes": 11806,
+      "sha256": "376cd24295895becaca82a1d8d40a009d2bf4a48687d7568c0fb1c828047dbc4"
+    },
+    "external_runtime.py": {
+      "bytes": 3052,
+      "sha256": "37b1682c5ee18230c944ed5c9bf1efb366aeb50467260a82c786bdcfcd8a491a"
+    },
+    "models/ddpg/seed0.zip": {
+      "bytes": 635342,
+      "sha256": "4312f21896ebbbc0989fef99657551d921eccb144ac5c7aec1b9783f0b5d9be0"
+    },
+    "models/ddpg/seed1.zip": {
+      "bytes": 635342,
+      "sha256": "48c0e72071439effbf206c4ef7d870e99af16727bcf9edd77b5932c8ef1a8b0f"
+    },
+    "models/ddpg/seed2.zip": {
+      "bytes": 635342,
+      "sha256": "e6f0b28a29f8d6e56f685de04679ef61609c9dfd95b4bc75e8fc006cfc73217f"
+    },
+    "models/ddpg/seed3.zip": {
+      "bytes": 635346,
+      "sha256": "a7015e83584858f5cd9f5f089079dd0713c936477d8efeb9c5b5c7ef10c4b7a2"
+    },
+    "README.md": {
+      "bytes": 5651,
+      "sha256": "a4acb09e766d4bf5a5cb0b61cd901add7cd62f2fc487aca7a596cb8449ced4eb"
+    },
+    "reference/archive_scenarios.tsv": {
+      "bytes": 22991,
+      "sha256": "b8c2c0b6a62407590f18c3dd4d8ad153ebaba45b4ff46582aa1b4b0fae9de7cb"
+    },
+    "reference/archive_windows.json": {
+      "bytes": 212089,
+      "sha256": "a267bd47bf0eab292b3d779ff8eadea07459750e13e9b2df14bbbb73f19e8968"
+    },
+    "reference/ddpg_seed0_learning.csv": {
+      "bytes": 2591,
+      "sha256": "8d8b93e0884871c776874b5652f022e8cb13d570acace79f9c9878a94a1a2b7d"
+    },
+    "reference/ddpg_seed1_learning.csv": {
+      "bytes": 2595,
+      "sha256": "de543063343b9e324605396683428d3698de2547edb39a7044fdf5c76ff00f88"
+    },
+    "reference/ddpg_seed2_learning.csv": {
+      "bytes": 2588,
+      "sha256": "e867bbd655d954c3038b60b409e6edbd45167382a1e63f0b903bb03856f848f6"
+    },
+    "reference/ddpg_seed3_learning.csv": {
+      "bytes": 2584,
+      "sha256": "e599c974d663422622f5ca9d5c1a0002ca2cc83bcbce069a671be97b05e5bced"
+    },
+    "reference/ddpg_training.json": {
+      "bytes": 7818,
+      "sha256": "9fbb7fc7c66a336263ff083b52cd4fdf7b0393da69163ba62ae0b58b767b30f5"
+    },
+    "reference/ev_scenarios.json": {
+      "bytes": 706,
+      "sha256": "f54e3c1102683bbb524ac2abbeda1ec798dc1cd8386843b9f42c3a445c25ba16"
+    },
+    "reference/external_seasons.tsv": {
+      "bytes": 1016,
+      "sha256": "3fec8374fc6c3a29f355a4dce1331d449026f303a8547015083d27d817c57046"
+    },
+    "reference/external_windows.json": {
+      "bytes": 31100,
+      "sha256": "0213f932663274ff9ad042d209f8267d9679d205a21a449c2d5d3d05371f2ac4"
+    },
+    "reference/primary_comparison.tsv": {
+      "bytes": 2630,
+      "sha256": "399a7139c833325b06cdc7aed569cddd42d8817077067876aeb88eecead18509"
+    },
+    "run.py": {
+      "bytes": 13749,
+      "sha256": "c9f991f572892ed48dcf7b6df62f247091cd72f8134f4a8f91850bce42139641"
+    },
+    "scenario_runtime.py": {
+      "bytes": 7879,
+      "sha256": "34c8fbf7b21498357db01c852cd2f421a00dfe82b299f76504d0ac03bf309bbf"
+    }
+  }
+}

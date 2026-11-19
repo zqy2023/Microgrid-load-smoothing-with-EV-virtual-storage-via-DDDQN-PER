@@ -1,0 +1,14 @@
+{
+  "schema": "comparison_ev_availability_proxy_v1",
+  "source_title": "CSIRO NSW/ACT projected uptake (NSWACT_SUMMARY_2022-07-03.csv)",
+  "source_sha256": "6da4c5e458b59b642ffdb5c2772c7dafe2ff2296838ba72d629a49e2d230a200",
+  "derivation": "NSW residential fleet, 2023, monthly mean BEV and PHEV count divided by monthly mean fleet count, then divided by the MEDIUM scenario share. HALF and ONE_AND_HALF are experimental multipliers.",
+  "ev_multipliers": {
+    "LOW": 0.9729317521535428,
+    "MEDIUM": 1.0,
+    "HIGH": 1.017719110749765,
+    "HALF": 0.5,
+    "ONE_AND_HALF": 1.5
+  },
+  "scope": "Only the archive's simulated availability gate is changed, not measured uptake or capacity."
+}
