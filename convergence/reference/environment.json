@@ -1,0 +1,11 @@
+{
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os_build": "Microsoft Windows NT 10.0.19045.0",
+  "processors": 16,
+  "workers": 8,
+  "state": "one simultaneous paired cohort",
+  "per_run_pytorch_threads": 1,
+  "python": "3.8.0",
+  "torch": "2.4.1+cpu",
+  "note": "Primary CPU time clock excludes checkpoint serialization, journal flush and offline evaluation."
+}

@@ -6,3 +6,4 @@
 # Preserve the manifest-verified package bytes across checkouts.
 reconstruction/** -text
 benchmark/** -text
+convergence/** -text

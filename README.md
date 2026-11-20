@@ -34,6 +34,12 @@ The first verification command replays the main comparison from repository asset
 
 Twelve additional full-budget runs remove Double DQN target selection, the Dueling head or PER one at a time. Each component study holds the auxiliary training targets, seeds, data, constraints and evaluation protocol fixed. [Results and saved-model replay](ablation/README.md) include both terminal regimes.
 
+## Sampled convergence and training time
+
+A four-seed paired study compares PER with uniform replay while holding the 21-action DDDQN and training conditions fixed. At the 75% whole-window variance-reduction target, PER reaches the target 2,500 interactions earlier on average at the first measured crossing. The mean sustained crossing is 16,500 interactions later, and PER uses 5.25% more process CPU time over the fixed training budget. [Experimental protocol, complete checkpoint replay and training commands](convergence/README.md).
+
 ## 中文说明
 
 本仓库与新版中英文论文使用同一实验口径。正文主比较为本文 DDDQN/PER、ToU、MPC、DDPG 和无储能基线。表中采用统一期末电量 37.5 kWh。可用上面的入口从仓库文件重放，并在结果报告查看自由期末、归档后半年及外部四季的适用边界。
+
+[N13 收敛速度核验报告](convergence/results/N13收敛速度核验报告.md)提供配对种子的首次达标、持续达标和训练计时结果。
