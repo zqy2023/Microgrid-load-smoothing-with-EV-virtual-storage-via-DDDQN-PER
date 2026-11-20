@@ -1,0 +1,3698 @@
+{
+  "schema": "component_ablation_training_provenance_v1",
+  "paired_reference_commit": "e190821886143f70af46437d52db749bc1afc06a",
+  "full_training_audit_sha256": "db7fb5779bef478e0a3515a97ab501a052c2af2c49ffd4b466226b44c2535f8c",
+  "raw_journal_scope": "Hashes of the 30 checked blocks per newly trained run; raw journals retained in the local archive",
+  "trainer_source_bindings": {
+    "portable_runtime.py": {
+      "bytes": 3803,
+      "sha256": "d783c09887c697cc2f14c7cec2ba44ba7a1b11fa1ae085b6009d132040965922"
+    },
+    "migration_env.py": {
+      "bytes": 13252,
+      "sha256": "155a96cee599eb7b34e4b052de1bdb9cda97d63d2c5ec6806e1125ab15d0841b"
+    },
+    "native_dddqn_per_sb3.py": {
+      "bytes": 15281,
+      "sha256": "0f0d6db3fa25b17999b2238ce6a2f4b064b7303abe59a7cc064d17eb52194ca3"
+    },
+    "train_single.py": {
+      "bytes": 10174,
+      "sha256": "3e325596bcfde3764fbdcf865856e2a7c23e5c572d44b4b7f57629f7ceaadbf7"
+    },
+    "priority_learner.py": {
+      "bytes": 7285,
+      "sha256": "1030dae95e81830610176d557dec0f2c2d648cb5a44f8195577c94f63edbd466"
+    },
+    "teaching_targets.py": {
+      "bytes": 3486,
+      "sha256": "2cd8ffeb44c43820511d9619673ec3f07e5a63313dcafede76e721698922e059"
+    },
+    "evaluate_single.py": {
+      "bytes": 1943,
+      "sha256": "234ad94961657aa22d8d5a0bf1d47fa8c183cedbc6fbd6bc2e274b0f8eb434a9"
+    },
+    "full.json": {
+      "bytes": 823,
+      "sha256": "49b27935c765a83d7e84edc981ae05d865e91dac9496a434d1a77fa020e4f96e"
+    },
+    "train.py": {
+      "bytes": 8665,
+      "sha256": "6415460372f6ff480d362d7bbf7ef47c87b7928fece3c8ae8a08eb48eb17dfa0"
+    },
+    "variants.py": {
+      "bytes": 4394,
+      "sha256": "5c359ab64b44a912ce3592fa12cb8dfbd9befb3d42cab60c3f87f4914fdbf2ef"
+    }
+  },
+  "runs": [
+    {
+      "variant": "no_double",
+      "seed": 0,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T07:55:18.547800+00:00",
+      "finished_utc": "2026-11-20T08:26:44.664930+00:00",
+      "training_seconds": 1868.8811254999998,
+      "training_receipt_sha256": "e39b30f1980eacb9cd84b3d468223640948abde3c97e6c59fddded41b6485408",
+      "model_sha256": "08c834c0c8a7245d875cf14ff4f1a2267f09f592054bf7afb8716dd31284cf4c",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4486362,
+          "sha256": "c17fafbf1a578a3e0a6b91b3ffcadaccdf3ec53fbbf90a6b37bf4a6829a4308d"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4594634,
+          "sha256": "c7d258b2898376e0e864c41d008a2967823d87d5a0480b363218880e2f48ce23"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4595601,
+          "sha256": "7405ceb4ebdce081035cd145045b25a4256a114bbcbd1b6b6dd1a778cf6de67d"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4599140,
+          "sha256": "e190212e79177f857f56a84725954633efcc2922f75acb60113b9f9856c7f245"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615005,
+          "sha256": "4417458cd06ae58f8fdf17f7422ec1c0dd6b26b60180d5701a01f46ed0b0473d"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619052,
+          "sha256": "e146ca5d38ec7102fe64fe01c50e3c4a49b656b230f25e4b38f856a00d877657"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617334,
+          "sha256": "c04b51893df306f5cbab410e6dae083484497151bc7d376043e554ca314f9354"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622203,
+          "sha256": "d8e9cec387b75c3879bcf90b4d9cf96f30ce22171b3fe5f5f4bb23ea1593918b"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622475,
+          "sha256": "a6e6fa6cbe7f1190e666b7031798238574a66d5d8b6a7ff3099861269aa9e47b"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618956,
+          "sha256": "54583c44e12ea72e03313b010984f915dbeb132610aef6118e93c84e4422a5ff"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621721,
+          "sha256": "d8301abfcdd17efc5e9da10754d5a3d99a6d85e8f58d138be4c2fc573116c4bf"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620541,
+          "sha256": "6db3f9de433627e54b8e0f215a65ae32106a8c9bd17a735852bdde316f259239"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620571,
+          "sha256": "aa6b0a644dcacee04b5c0b64fdaa67ffd49c28357839616974552ffcc829a788"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616321,
+          "sha256": "ab7032e44ab78d943a41dd885acade2e660afa49f50553a660fe7343c07e424e"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624658,
+          "sha256": "bb6abcf9bc3e5898f26c1425f56e9c46a91f8769dafec84fec561fe61b29ccf7"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624238,
+          "sha256": "3f08a0ac711045d8f12a9e7a0dbf113d7477c4b7186b70e428fb79d6bbaf9262"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4628767,
+          "sha256": "98e218bad614ea9fff41095f74934019c12a85ed6a4e3451ef1dd2ee850487a9"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624065,
+          "sha256": "54b495f8c104dd537cd6d4f170ed51f3953826852afa0b4549eb14a0279ae9f3"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621623,
+          "sha256": "56a0644f2161b5bf5aaa4f65df0cd131055eaaf96f2bdecc239278b2ca10ed51"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622343,
+          "sha256": "a2f9769b3941317acfc5a0ebc6535256363dc293583ba03ff4f9713f12276ce4"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618833,
+          "sha256": "6b6db9e9a53ec4c3e25fd40fa8b39224b667477854bbc96a870e14061a809594"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621699,
+          "sha256": "38c5af0e28b0761af5a60f0071a04b276485938aad31e23c32632e56952966dd"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625629,
+          "sha256": "6e15350c2a37e9567bd5cda036146e7d631f1f89bc0ea537a892655eca0599e7"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621351,
+          "sha256": "f12fd420b9f46c7b076b9c06ab39a3fb764501a1845b8c46e6ea75350ac715f3"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618901,
+          "sha256": "4836295f79ee840a8e4f1daae055a2bc10cf4cfe0f6f627ed73099c55463b50e"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623811,
+          "sha256": "5bd02837f1f8ae919567fddeb933c83a6862d19445fc8d35d95d517d1fb7649f"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623706,
+          "sha256": "1498d9dea5bcaff8f6caa5167dfc37ca853d2158f7a1f27c16d7163f0c8aeee0"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617803,
+          "sha256": "ee721746bc1a16f46eb764d5188407c97c895f1f1a10fb057e8ad1c4dbce7087"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623167,
+          "sha256": "d0ddd1762f9d9fd464ed78cd4d2430e388404a24ba2520c2f03f7cc01147a75d"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624970,
+          "sha256": "9629b4410750631128da089ffe4829fb57c853f9422834a75853b9a4a3462125"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627245
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8504973
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 661,
+        "2": 8504973
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299728,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_double",
+      "seed": 1,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T07:55:18.450777+00:00",
+      "finished_utc": "2026-11-20T08:26:46.072847+00:00",
+      "training_seconds": 1870.6184529,
+      "training_receipt_sha256": "61507640025400114231e6fb8a217a8bb71e98c9b07987ddee324db1b9d4a2c5",
+      "model_sha256": "a5cc068e82ffbf5b3e87b3f852330eb09205edc361e80ecc6ace3722932eb3b0",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4488854,
+          "sha256": "8b7b25f340a95db5f3025df87785135d5301529e554dd0524f0f49857634615f"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4589617,
+          "sha256": "d6205aef10a75eabc2b6077e6a720a9614fc0de573fefcecbb4ae953d7e0a56e"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4595968,
+          "sha256": "8f462ed8da8b8c21169e5773d2f5a29b817fbf9e20c5420d520541b33a055e7d"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4601526,
+          "sha256": "a39c77261db37eedb8ca085c4d62168f98de5083fb29272e2523bd05721eedf9"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617200,
+          "sha256": "48baf1e407892e213795a4a48ee2dcb5061b9b6af2bed0255d8a0f3445d5e52a"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616091,
+          "sha256": "09d0eae55e8dd95f75f566a3a0f25b048ae21c88feb989e148fc09dbe0179aa4"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614319,
+          "sha256": "089e1a3ba7a6e3b73218e37e6c11599551182798945798ed9875bee18215592b"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622672,
+          "sha256": "8f01758d156162164f5f914639f065c199077146235e5bdb47efddf478e2e152"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621688,
+          "sha256": "d052ac8a735ee9bbc800260ec948b93b67f4082db765cc33e46959c6591a4102"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4613312,
+          "sha256": "d23c8994e849d94216932e3ad387c4aa1c363aedeea67ffad4b16b329ec7b07b"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622062,
+          "sha256": "134f49139f7d66c013db80a84fe82e38a8a0b35c8ffb5f72a84f92cbfb5d816c"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622276,
+          "sha256": "04efccee1784ce6568f99f4780872358d447c0e60823712161b0c49f9a9f2f8c"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620730,
+          "sha256": "4fbec4668914aa12a7beaccee9fd244b6baf4a1727d40de1f80b603b1ac0d468"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619086,
+          "sha256": "341fd06200b9d2b9da7d39d5ab83ff93d3c6b2146a0fe0c1cfc07a01e11cd8c6"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625094,
+          "sha256": "04b6ef727c6778dd6fe7738c3903c59a9f8205ae82551f164caf76bf7159858c"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4628030,
+          "sha256": "ad556293abad482bef647a7b4b3c1ddcc9f4a83e9804e31aa485113c143fa12a"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619709,
+          "sha256": "ca5190bf922d7f9f2b461aa4e665ea652a01e1765ab5e7ef28cc304f5be092f9"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621305,
+          "sha256": "c9ff0db527788667e0bf97087fa1ff80a516c826c45d1d5479b29970239d7823"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622758,
+          "sha256": "8bead531015effb12e652fe5eaef5b53ce8b5b7b59e3cab842bbfc133d33184a"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621533,
+          "sha256": "25aec22a831227d15da3610b6131a450ffd42b4a182b31d9f8a303f85a2acd26"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616803,
+          "sha256": "04bec0949affa000bcc9c676aacc16e8d98da806bfa527225a42f2007556021b"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621870,
+          "sha256": "3b9a533e0cca390b97c2f4f8c24d08e87c2dfa195c971c8255b47be301751355"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625827,
+          "sha256": "4e03b40543e33cd347314d3bf7bf13dd81f2f786bf243a64189f104086d6fb5d"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615661,
+          "sha256": "7bef497aa08616a3503627534c9738a3b4d5fe922a8b256fe41f9c0a7edd43a5"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621251,
+          "sha256": "999de6985afc1671385f24fb789e7e739d38042bc1728262b6d58c28db7c61b2"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623469,
+          "sha256": "fcc507d4eb6925b749c7eb725a4ea89d5b54df62541b18ab0b8a0c90e601f071"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621205,
+          "sha256": "c45ba5418dfde821296d300d8d97860e95904cd555754fd8d74667ab4a841e3d"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618805,
+          "sha256": "f585feed3e1be4f0180f5967e928f0a37ef951544b6feadebffc8cf78a6843fd"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622956,
+          "sha256": "8cd250a68ca2dfbd1c599a0fdedf8c6075dadc342964bbad18c41f647c9e7593"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625657,
+          "sha256": "782acf1f2e8c6aefbc643477aa6a78081a3f70561ab790d9907601501fffb52b"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627530
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8511778
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 663,
+        "2": 8511778
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299728,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_double",
+      "seed": 2,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T08:22:52.942451+00:00",
+      "finished_utc": "2026-11-20T08:53:39.061981+00:00",
+      "training_seconds": 1830.1173811,
+      "training_receipt_sha256": "2ac53a9122f5f5158da2dfa3ee369bf6e4afc17b194b45f634d72ce84aa90ca3",
+      "model_sha256": "68f472f60aaf2c766bf69f9120823610480d5203232654c19dd74c35d60da326",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4490667,
+          "sha256": "e8e2d6c05e4f4574c52b6d4eb7607bd050bfab2ecb4acac4a71259c5b4a89598"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4595373,
+          "sha256": "a61b4ac309e57af44c5561f403dbe87bd2e2fad4a319808ebc044091b2bacb2d"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4592831,
+          "sha256": "a49b90c6093cae6440b864d16966f555ca47ec61e14eff68ac2c568a55429ee6"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4603108,
+          "sha256": "f45419b501cf3d28f12ec6a01f23e6aa1493c8d3e64d0b2cdb870c2eb5db21d7"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614826,
+          "sha256": "b04e475af5913704d65e63945df1ec7cd16547dcdcaf12454c28ea6d78aa5969"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618714,
+          "sha256": "092112d3b0be600c393465bf164f1eb49472dfd226b90fef5ab02c5937683083"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615827,
+          "sha256": "33275639b33860d877a99bc36cd67e8723b1a627b724da40fc29a393ae6ae065"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624111,
+          "sha256": "baffdf271b904dddf388cc071278db882f0aea57d009f1d5435ae8535633d3c8"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621603,
+          "sha256": "46428aa1d7217bd84bd22dd7f77291a7cdb4dc2987e3066eb00bcee67d0dc361"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615079,
+          "sha256": "902d6936465fbeda7b4179682d18ef583d21b18aa1ad04e27ef893b4886bbd75"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622690,
+          "sha256": "4f67476c95026208bc4ff3dbedba0171c30cd0fd6a783fd54e246cc40f8bd063"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620759,
+          "sha256": "4bbb12c38b7185dfb8cd21445945d994ff04dabad291037b28b36c525e0a8ccc"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621292,
+          "sha256": "f0774843b1b65cd215c56785323711c3d6aaf8c25a27a67ad408d93b7fbe49a0"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619661,
+          "sha256": "a5e147aeac7200479179746a48b1a84e0426aa67229ac875463763f9cb47b481"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622790,
+          "sha256": "badbb5b9ed829c597589eed2e25d2503c28fb71bcb1abf5e57f7a9121e964dc6"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621726,
+          "sha256": "0ad16b8f42d118fad1e6e34814da546471df5cd15205d56d88ee58dc50c5c99b"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618184,
+          "sha256": "dda7a87bf50354180a369c130a57c73245846f9a59731f74713146ae8041e20a"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621329,
+          "sha256": "33a35b072f25626eca70d289373a831c4c249d66ee39eb6ebc88eb5219e74cf9"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622294,
+          "sha256": "26f2c62be931d5ca59acf3b3800ffdd6fd070bb3cb977e91ccd9a1e4ef77839f"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622633,
+          "sha256": "a84d5a955ce86a85fe32f4de72e6326bac6622acd2792c06d9747c4505974f41"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621130,
+          "sha256": "84b340a19086ef6490f30e9463ef392e19e0fc22e9d48e460f64023663e229d5"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623418,
+          "sha256": "31a25611240b40bedbf20543c80503ffa87e48d6a29c09c953091d7adcb634c0"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624328,
+          "sha256": "fa49feade15d10095e53e46eb45fa7ff3b65a60760390533d12f775facba01cc"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617173,
+          "sha256": "223be53cf952e3f354cab6570e356318c8438fc39a33d983e3db8f32c7fdfcdf"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620173,
+          "sha256": "732a9c7e947fc73a50e47dbbd872f9cb3e873ad3f44f43be1adc972166939ea3"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623724,
+          "sha256": "12fe74acdbccb8ae9d8188e3c467ce7deaf28b2f91535f2c4ca221a4d87b60a1"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622533,
+          "sha256": "13fabeab0965496161949527743a2e339c693037ee31fb06cba06339d75a0b0e"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619929,
+          "sha256": "93e3fd16aadad99facc16bedbc62ce30d20433b5494b9b9e30c5a1c91fd5b451"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624629,
+          "sha256": "84369b79a0f627de6052963bca66870f98c284e7d90af0cd68e00555a76abdd1"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622573,
+          "sha256": "2470981daa59bc7fd41a3293c064a8778a560b12f9eca500e7ee9e651e4ab7b2"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 626885
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8506887
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 661,
+        "2": 8506887
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299734,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_double",
+      "seed": 3,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T08:26:50.394549+00:00",
+      "finished_utc": "2026-11-20T08:56:50.976055+00:00",
+      "training_seconds": 1785.1243374,
+      "training_receipt_sha256": "b5f255b951b4273d4a0e6920226dea0e6c6daa59b1ae7af8ff6cfbaae4f5740d",
+      "model_sha256": "7c8333c61420515b2c1c3f472f5071ff701c2a44afd19135c132a88f0c725e28",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4480531,
+          "sha256": "96c4136449368dbe32612ea1b36e0f1dd6e5616cc368e53c9f881890f487eecc"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4582228,
+          "sha256": "863cbf3664243899423244e6f2f40aebfa745d9563e50e852f016ded779e4843"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4596464,
+          "sha256": "948b73a6fae7a90d5e6b894795b635e368ba9495816b5cdf7b5202c572982f7a"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4598414,
+          "sha256": "7a1aec7a747c4fdd4a2ee1e13bad556e7066009a8e1f51b096653f17d4caa6f0"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614681,
+          "sha256": "cad1ab7b8a8cd407e7813d745a4b21a8767a23c098e88b39978d5c58ef272b2b"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619693,
+          "sha256": "22e5736fb66c1f8ccceac3c82046a2364cfde98c093400c168331205f63b7f1c"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615827,
+          "sha256": "f07ed951bd9c494690663a15be0204c33b6856e848b18b518454c0cf12ec7742"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621351,
+          "sha256": "d761973630a42e3139552553cfed8f51126fadd2a61235744cf95f7b17893895"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620636,
+          "sha256": "bde58c4287e2b591c7dcbda75c0f5e848c0fda88871550df92b7218e6a3aa28b"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615308,
+          "sha256": "7a0f1e00c02ccb4f2a6ff479dd8566ddad51aff18e98d4ee9ce4fe803c76b014"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621305,
+          "sha256": "ea8ac7a8b4cc782894769cf3c19cdd5dec06bcab366b2ce30901a7979b33f6b3"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622450,
+          "sha256": "08897556a8900d5d55cd9a2b58d883c5db5c8bf8c9bef623b4ee76ee3ce1f8a1"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621848,
+          "sha256": "054c9d1a44e93a161badd2925e848517eb633db6fbc3fb1982e402432ff42828"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619543,
+          "sha256": "72720c0abc90c6331140322ebcb1e4abd96f287e9e18ccb9fcd623e92a493837"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623245,
+          "sha256": "5c3735d95b6b5decace7dc81aae2d8c08165c17c4a773bd0fa6a879afe219df6"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621802,
+          "sha256": "fc77081577cae986ac8fa0b59d0d080ebe97762d5cf678a2322f7471d2c5d2d7"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618191,
+          "sha256": "6938d3c63f9e825f664b3c21ca502f2f874f66f1738da3126d2ceaa51550d098"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620628,
+          "sha256": "75cec58d2bc2fc451434e8d66369e25c4b6d282c0c12014e046088de6a781e82"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621647,
+          "sha256": "4ebaea61e6e74db128b4804491d7339847d4ad2aab88ff931b8ff49529fb5202"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621603,
+          "sha256": "d771f19b75552e934c2297ac6eff3413e28022d0c7d5473084febd82e9e4d08b"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616472,
+          "sha256": "b3e5f609eebb4021cadb2244affd519a032cbb6f27adf0902e594512e24c4f1c"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625644,
+          "sha256": "db55c25757e230e2da2208a9646d74e156f526cd06146f17b1dba4321245380b"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623907,
+          "sha256": "874641bdbac464fa28b9066d4cb3eb322c6910dcd54f6b4c733133c3d53f4f71"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618308,
+          "sha256": "c2054f190989ebbc307245ee3a22579321f7d8d30837fc3e9334a6350953c769"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622295,
+          "sha256": "4eceabc4c9521a7fc3123200d5a6a5d9f5e0ce8e074008fe92e5e08076a65cf6"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621458,
+          "sha256": "696120a17b245a509639a70a1af54a77c4f689a3451c818f0a88bbf25196bd03"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622029,
+          "sha256": "357821eaf0a020ca4dc4e5df8d8ee06dfd0da5dfa9f220ad63510b47d414abbf"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617318,
+          "sha256": "e3bba3d1f01674fd0d9db1d166bf00bea59404e6d5aea64e60472c72216e7176"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4627224,
+          "sha256": "4b82dfbb45e3759c9a6506db5ee7481855de2db8924762a0411f7a0a89ac4f3f"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624985,
+          "sha256": "c29f3d84adb31f08389969ea92fcf68467384c6b48e4756deb63bc6327d95944"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627134
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8502173
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 647,
+        "2": 8502173
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299732,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 0,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T07:55:18.355755+00:00",
+      "finished_utc": "2026-11-20T08:22:57.443255+00:00",
+      "training_seconds": 1645.9549468,
+      "training_receipt_sha256": "66e9aa0610f911dd2c49204946a595e0aa7cc0dffdc023df79334a37c980b1fd",
+      "model_sha256": "6c912021b95046660c2d3f8e49a731ba4cb4d30c3357659145178ccf8aef2e88",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4484406,
+          "sha256": "daea65559968de414e4eed74c71be11bb23dd35778184c67e0c34679839b7e57"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4587884,
+          "sha256": "d3f7d9dafb42be3904680800025400387570398d60ee7a8b28db2c2668a4fad4"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4590900,
+          "sha256": "ab9cb9a1b7f164f20fb542812c17cf3223b408977ba49d0aaee554d69222aa1c"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4598644,
+          "sha256": "9c755725a4884962ad5100c768d253b12643153a12a10de204d53866a1cfd383"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4611413,
+          "sha256": "9cb25643434bd79aa86b77047cb85ae72d6a4e9ef2c73efb8089d4c8d385a6c4"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617640,
+          "sha256": "3e83a074faf8a02a409c87132d86fdceef9fab0a3bcef2273b0d217e0730b86b"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4611362,
+          "sha256": "291f886d540282d7cc4265290b3f055fe3ea99f17c1ac81ee1e9a6576ef26a64"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620560,
+          "sha256": "f48c956e72e547d471c219a85ce3f2f423463029d2d6c87cebf91aebd318f623"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618967,
+          "sha256": "8bbe04f0a425077905f1ce1cb065a8eedc02df5d5c2831ffb76f3da6f07ad893"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4613706,
+          "sha256": "9fd5dcaa5667118237453cbcf61220ac65966a0438d291652d3604eee8a8d244"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621390,
+          "sha256": "e72bc7c5593a0a6dd2eca6888089874663e050175188876317d8952f2a922f32"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621354,
+          "sha256": "75d87f983ab8ef988ef0e0ec3c399c7b3be51b6fdb0682e22758ea6f7d2e26b2"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619549,
+          "sha256": "ab4718d549d24c5478f2d2e3ad93d597e38914cefcfd9294a19b34df208da1da"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4612031,
+          "sha256": "1f4d6018fc111baaf63e0337ed9345146040ccdecbb5bf51746974bde52f4c7b"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622592,
+          "sha256": "9b6d792422327c7e2518fc083e3b1334cdd7159014120c5f715225b75f14b298"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623742,
+          "sha256": "29cc35643f694cd996fe399aff601c441b0daeb8cf9a34a6a688115fabd87021"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617833,
+          "sha256": "c742f81a5e67e7097dc3282bbb976865babd77248de4da0dae8cb5489c5d239f"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4626380,
+          "sha256": "61c63f2ae4e2776490fdb44db610cbda70ae0c8965036ba7d568733ccc94764d"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622713,
+          "sha256": "64f3cb153dc462d32eedea238d9f32f768ae359a14f52b635ec58c0231ed5cc7"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4628014,
+          "sha256": "705038c0d2e603292f42e0e65200e23a3c01ba4ffb5575b90be3d5fc897c2aed"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616541,
+          "sha256": "706b4152aea544dad83c8411d1282bcad1b7639027135c213e15d0c735162bc2"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622043,
+          "sha256": "2b6166593e7b7d7c4aeb9a76ba141b4acba48fce97c5ac9638fe6a668b4bafa6"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625751,
+          "sha256": "bec4043bb9d64dfba8e663a796bbe8cd34a602c594dd256e76752570198b02b3"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4633481,
+          "sha256": "6c60d4992e1295e1fe42342b42aeb01483efa21b0f98c53b184c976abf88442d"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620646,
+          "sha256": "836411c621664b350f43966428cf9e27443b4ac7a41aa51c16e21e97a5be032d"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621695,
+          "sha256": "42b8592de14cbd272d47ba87f587da01ee5e9b1d2380b2805735550cec7f049e"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623490,
+          "sha256": "695be9c0afcc3f732ef32f7298e2dda95895dd2ad678c4dcb22e0c524c18ecdb"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614511,
+          "sha256": "032b3d74de015a31fc3f9aed1a43b1844cebae8aa5c114ecd5e45a45c50f1304"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625292,
+          "sha256": "407dc0c835bdbd964334a414b94ef9af3fcd94dcad90efbf6592d74209a7622d"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621893,
+          "sha256": "861340b37c3874894944833ebe7e3f49043f9d189d92d50f27a5e89985799763"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 626876
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8497406
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 659,
+        "2": 8497406
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299735,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 1,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T07:55:18.517792+00:00",
+      "finished_utc": "2026-11-20T08:22:48.065041+00:00",
+      "training_seconds": 1635.7602193,
+      "training_receipt_sha256": "55b24fd9fad06fb19a484ce46c78e988552ed80acf9da938299c72dc2af5677d",
+      "model_sha256": "3483f17bf68d72eddb9ba1b5f4d3a01e50aafc7ae22b93b72d9ad6cbff1cb92b",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4491050,
+          "sha256": "45e6705a10c5c74196b0bb5833e0ded4df74a2a4003b698e5d98b1a7233d92e7"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4584637,
+          "sha256": "318cd68abbdaa8f8f8e5839bbdc8f08faf78642b68bb54540495f0dd3a5c7c39"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4588691,
+          "sha256": "ba770ca72a6876055c9488398cb0fdfb37c260f4f46da61eb44f93ad071b7c13"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4595803,
+          "sha256": "087b232e68e8aad3154c039cc8f35d303d04ab90cdcded2d9eb0db343f3c8a98"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4612467,
+          "sha256": "78890685cb9de0a38205a5c4e33ce4c5757476cd966948ba3011b99460efe1a5"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4627463,
+          "sha256": "118b50a764622bfa031b5e75427f4df320c64a741bb6455b91c4d02c3593136d"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625236,
+          "sha256": "a21a12b45d243164ce55fe307f749b89e461b1884c9ae786d6d5a01c699e8343"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4626187,
+          "sha256": "66e33adc47f90dd9922295230136b49ca1e3045d0c480114e270ceb80c765dbd"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620685,
+          "sha256": "9e842bcdb1c720a2869d8e1a292134265e8d45fd682a3cd17f03b8b85834b5df"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4613384,
+          "sha256": "8c475810c9edbef966c9372bc80716b2537a7c3037f382cc66da00bc8df5d5ca"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620596,
+          "sha256": "d66b92cb7b089ca40c44f7c091503a758cd054ac425a20e4b8835b8879240545"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620478,
+          "sha256": "393ca98b5ecd15ed3bc39201d38d98faf3069265e67b3ee2a9f136f8c006a611"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618610,
+          "sha256": "0e5a70fa52327cd1a6dd80b774f81074279805c862ac552dc02bd9c7e6f40995"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618902,
+          "sha256": "034eccb38556e42aac6554e5d86c4f64a2621545ceaa6c3a5ec6c6d62693eb13"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623120,
+          "sha256": "8ee908fa3996088a2f2ad8254689cc09ad5ff13b6ed754a2f2c192a791617738"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620830,
+          "sha256": "5bd17396181bec2102d493326d2146e8c77e766a6b02b1034d5ea811f2cccfdc"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617327,
+          "sha256": "688107cb6f56370151aa9e234232c5ecbbde3a8c7fc7d006b8e56f0bc5a69366"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621857,
+          "sha256": "63ff477be17cf47fa232e3bfbece286e6369c19a2d8c7b14d9d9c7cf477b4902"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620802,
+          "sha256": "c80760d0d5f68a536d641596cadfe13a7d3b59c8ab47070acd3312a210a228ae"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623753,
+          "sha256": "985209fc427272b7c1e223501e09e08d8e75b227861ea71d25496aa448ba0f97"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621239,
+          "sha256": "2d68703c5ea77c06ba76048726afa8311e98b435d579d78288ba5bbf352d9925"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624689,
+          "sha256": "c2579c7dbb99b50b4b2c212db6eacc52a628b60846bd8f12f5819fa4dc83c312"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624014,
+          "sha256": "5cc56d467f4742ae769a1f3019a865f6d8f8e0e5d0a27700323299044bd408f5"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615097,
+          "sha256": "33a60fa769a80467ee8409a36eb287643d1d893e1e86637fe78267dee1706855"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619531,
+          "sha256": "6c52529107f2ebf7b91504df2ede48cc98ebf1f3bff3751972e29a33bfcfae1f"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621594,
+          "sha256": "65c3894315c1788480094e85076995e2644ecb77e65d93a77ac115239d46fe88"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622045,
+          "sha256": "17a8694b8a9a5b26f8166cceecf8d21727c39054da29db107346d9bdb54c4d0a"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616069,
+          "sha256": "4d3f535c88187eab13f80944cc7936f127f1c9863728328a76d3d6b7ce3424ce"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621978,
+          "sha256": "55cfa4ed3daa8b8cc3613c7aee35de0cd44151d6f5106cc2d5d12e981199f948"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623910,
+          "sha256": "74e8aff96b9befaf8469593eb7e2d73d48f4e2ef91be73256ce58c43e575693f"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627434
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8504942
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 658,
+        "2": 8504942
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299727,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 2,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T08:23:02.135848+00:00",
+      "finished_utc": "2026-11-20T08:50:38.150554+00:00",
+      "training_seconds": 1642.1269097,
+      "training_receipt_sha256": "0ec92e4c7c0407fcc42517ca3dc2d4e98425decc438dc2d28c197f04e9bd291d",
+      "model_sha256": "1e198e50658d758919cdfe1d2b9325e857a2e2810ce351f3b6dfae735d6018b1",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4492828,
+          "sha256": "23127f15cb7ef65ba769ee2595d667fe9ae888c6cee4119faf636aef6623a76f"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4591412,
+          "sha256": "749c661dfeb4382e2f3bdc92816a10ac843c1c094d24796ab486412ba6c57178"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4594577,
+          "sha256": "559c5c22363176fee5de8eb55f6cbe95d07d7f32dea01b5169691b677977ccc5"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4601706,
+          "sha256": "e0c7623d773d43b8776f1cb3630a96c40cc2ff8f30e6e4ca6c8c86dd4263f4f1"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614164,
+          "sha256": "3cda4c0ecf3c9237406f3c3bf44a3b79d53e1ec7b0a66b088ad8a4f138c15759"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616809,
+          "sha256": "5b0f8bce10517f51748099c8748a0006441ded16734762e9797270f1b8dc92da"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614633,
+          "sha256": "01133ef40f5958d400e3e35961bdb576db01b4bba333460de08dcac63a597b0d"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618421,
+          "sha256": "342e6dbfe76fc1f91f02611c39b90a8dbc9e2e6cf9e84b706aaabe4c09e5d68d"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619825,
+          "sha256": "956fa9c5fbc687078a0038a87677eb2dc7edb9fedef8feb2d66a60aba58938de"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4612298,
+          "sha256": "42190b41c39c2f455640a8cab333c6a90417cb10982ce19ca5bba8b34f63756c"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619689,
+          "sha256": "1b4bc3bbf4f00f44ed70574652df060b3e916aba1d7a1a3f8dda8f686c43a820"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618465,
+          "sha256": "2ae901591884c8fc0b283f947303e0328e9fbbc5426327eb97b85593a13e38e6"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617947,
+          "sha256": "e0f45bb80c6c50e304f499314d98b415a8160fedb76bfbe4bb2537b7bf57432a"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4618582,
+          "sha256": "fbe3ed2a7ea36a68ee6a1b9745dae68431fbc22bdff2a2f8036793003c45bafd"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620696,
+          "sha256": "8e55bd7d9868bf73654f55418077e71d4ff107c1389e4d5befe0d5ae30c4fbf5"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4629129,
+          "sha256": "4f85879fb44a8e21cf525617fa913c16b0435bdc1a64783a850f4e9e73dce05a"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619337,
+          "sha256": "b2633907e51100bdda342ae524ce358ec8fd5489d31fc851724eaf6e8050a15c"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619750,
+          "sha256": "afccf639f9f5ca1419049db219ad91addc29979d2b6ff0a8cced2b2d56bc1d46"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4619301,
+          "sha256": "f1bf4db3c67192130db30b5e12147f0e2270e135e760f7abe4e1a7f33d3082a1"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620451,
+          "sha256": "d9426f3d413dc83bc99985535082ff194f663ca68e08fd1c712efdb9bccbfc86"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620841,
+          "sha256": "2084365019aac20b8072833c0d950c631ce79c51f347df46fdff98010cbe0646"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625261,
+          "sha256": "6244846727ef452a753ed0ef78e338d7831658c05714544ea7b12e98581baf6e"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623128,
+          "sha256": "1e788a06e55185ac64821feb77ea7d3acb3b744d396d9ae13823b42c28c0c9f4"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615214,
+          "sha256": "fddbe4a972ba32d709201afef1a24371a40df782fa1512909cf84175d2bc0de7"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620124,
+          "sha256": "54c58e83d7622cff02917efacc58242ea43072b6d800cae7a6c26fbac14cd663"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623678,
+          "sha256": "f140687684746ae6d1a59425eb3f322218912c32c0dd2db665541e87af93ef92"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621600,
+          "sha256": "c2095f34df4b94787c0a6155db7fedaef6c726e4f06638b40ec07011cf4e66bc"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4617882,
+          "sha256": "3aa43166e27c5dca230cd70bed38701d65345a81b3e2c9a7dcc134449fc18b52"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623342,
+          "sha256": "eec3735e1f189710fe80a1d595984e8156196109a1950eb73d145d3f51a8fc71"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624333,
+          "sha256": "2f8c49deeb50ba842d18bfca737573eac955c74d8ad3f9bfc0d8e1b3e276d98d"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 626886
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8496632
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 660,
+        "2": 8496632
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299728,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 3,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T08:26:50.465179+00:00",
+      "finished_utc": "2026-11-20T08:53:30.167037+00:00",
+      "training_seconds": 1586.677872,
+      "training_receipt_sha256": "9118a620857b484e43820c40cb8a6df356941f5d014ddb971d66e4623fddc1db",
+      "model_sha256": "92980e2275120a10fd2870fc494335b45ec87b9c412d1bc69cc165173a0bf9fe",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 4480467,
+          "sha256": "52cb55ffe72d1d6fa4aff9019db2ca6d362b2501d7cc8d7b7fe3e577baac2152"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4577508,
+          "sha256": "2e3f03947225a5d3b5eb8f33645006fdae6fd897b05b190ea76e0e6e45f5da7d"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4593741,
+          "sha256": "ff78d0bdd7207b25bfae646cb730564a21222ecbd2469b94af38ed95af7f489e"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4597112,
+          "sha256": "0ee454cb894f4e372cf771199414cff5df59c5220176731e5a1256dc3a643132"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615832,
+          "sha256": "d4e6e6085171aca16c800e6620c59371ddd899004e5fc88d5e784843286532c2"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4621462,
+          "sha256": "6f9c342a55b04600e9670b698d8fb71eb4062ac5df35db12655f6561d8b59e7f"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614336,
+          "sha256": "4bfd7c26caaf0ede7809a056afc1386eda1760f4d1b6a465bdfbdc349faba8cb"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622129,
+          "sha256": "1fdfa304af0dfeadc54e23378856d4316d19ff84a624bd48feba3c357207ff6b"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622638,
+          "sha256": "d961d9ca8b7bf2ccdd65c18513b66964f970f6927cda3df83f51b8920fcd43fa"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4614601,
+          "sha256": "cf6909bf990725ca9fa296523fafe15609e7691540cac7160fa8be88c33d113d"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622098,
+          "sha256": "05efc352bf46ddc5b58825bdb08fc1819ecd498de44cd583a311ec31de82ee48"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622027,
+          "sha256": "6c41d8db6b6c7cf7d4615f49d47308d9e7eeec780a91aa0018b8ed290c2f11e9"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620398,
+          "sha256": "8a264400130724b996d6cdcea161ae09f36045a09cae235b5ccbb64ee08e09cf"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4625666,
+          "sha256": "a663018164197758bff61cc0572252cec8fd15584a9482510b682a1f2a2a90c9"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4627669,
+          "sha256": "9981f7c60169b8fd8e981e8a2a2c356977c315cc1bd64190672c6624556f595a"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623556,
+          "sha256": "0a14fa1beeff2bc5fd3b1484f81ed7cb77cfcce0261a2ed5ba7b3599cb172c92"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616763,
+          "sha256": "de1fff9744dd3322215903dd8db846a905a1098b07e68d88f6c37526f96b4bc5"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623291,
+          "sha256": "195003c02d2a75834507d1934e821d728d9c14e43bc992cd3d3f8dcfec7d9462"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622069,
+          "sha256": "0c3b51409caa25ec2b869943db09258411614bbaf07514ed4fe4688795bf9a43"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620118,
+          "sha256": "52c65fb055043375bcf6617b59c0a7f2f05f24305bd02207ecb968f88d3900ca"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616852,
+          "sha256": "f661afe987ee551e866e6ace3dee3edf0c7b8d9b86d99ec3bd487b60dac946ca"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624661,
+          "sha256": "c9df9fefcc94f46b3c8393d87c0ad2fa9e0950dcedb23e1afb862efcc415bc23"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4624226,
+          "sha256": "8ab170d0c81ef326d254109292f58d1ac8f7e63c50f08a112e3d34a0cb9861c6"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4616636,
+          "sha256": "941121ec8cebbddff3aa873b2063183189df9dd04fdd8b51b9c223e0a39c797f"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4620733,
+          "sha256": "eadb3a3ee19b84ad53a67429420f581a95563ca50234f3f6b2d458d11ae9b6d2"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623760,
+          "sha256": "150b4a5650677f4ca68d2e90d3d42b3e1424e9f28cc7a991f4f0bdfaf892e275"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4622907,
+          "sha256": "cd73e187bf3e110fa50732f9d8b54a71ad43d579394edf1114bce5744e597bcc"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4615341,
+          "sha256": "9efa01bfafe6c2f049993977343498141647c2fe9f5df7b28496ef6aba8d1e90"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4626626,
+          "sha256": "982f8dd2c56bf286c6ff8b58848652a50f7257e09a1c7d875a7bcd3e4714d7a4"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 4623460,
+          "sha256": "f9b18ffd8bcafd85055ea65668eb0205dfb5f8bf0d2589d0e372766adeea9f73"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 626975
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8490445
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 659,
+        "2": 8490445
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299726,
+        "exact_uniform_draws_recomputed": 0
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 0,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T07:55:18.551799+00:00",
+      "finished_utc": "2026-11-20T08:27:09.945366+00:00",
+      "training_seconds": 1894.3347997,
+      "training_receipt_sha256": "5cf54d253c365f007721c2c03a584bc87ff9c6684ca9bda12d3fd4232a3f6a6a",
+      "model_sha256": "9e628907f4a775b4e98539223cf93aa2fbc2026e57b31741c4ebd9129aade0b6",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 3421660,
+          "sha256": "88eb04b362e4ac9fdc1f59faf9f2c89ce5b8752c4179665e4cd9079710edbc8e"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3516370,
+          "sha256": "0321d4a36581d5dc81b28b49cf88f47fcfa147dcbb39517cd5a511f57bc995e6"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3527200,
+          "sha256": "c5cfb5f7178fd48594c0b9908fe29ad7e6ce985f3f9c199402d3b6460947aab4"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3529992,
+          "sha256": "b253213596a34247c7792c5bbf9e7bff9d4b675ef1d78efc06ee01518f23154a"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3546669,
+          "sha256": "1efda9f16376d535dca29beb09419c940d9568442e82b883bccd3a0d9eb4d3ab"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549082,
+          "sha256": "eb929678f6b46ddd333d0355a8d20a7bcf9122d88d3b8f942240f5d290aef218"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3545529,
+          "sha256": "74b62c6db414eb3c2e6ba404bc82c6f5d412d8d9197e4e3b02fa6998ff3de7ed"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552031,
+          "sha256": "db117c2a4b5ff8110f6f205861fc5c2767e7132e58789a2b0d4de9e612e4355c"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552020,
+          "sha256": "a9143527f782b3946310eb7dd810676bd5ec7eff53333f93e49a4ba75ac6a9d5"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3544785,
+          "sha256": "035a9e3373a9db784779431b6461efafa65865b355eac260ae1b113ef92cb137"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549402,
+          "sha256": "6e9be50867e3a28ea45b264be1efc63e4cbffb842f27153f5e4fae29444f5cdc"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549466,
+          "sha256": "85d70c5ccc47c0676ed7f76409366177e6eed5191da04214e52278937ab07601"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549397,
+          "sha256": "cdcc5e3a8e90e6dbb158366f88d5bcef05551c574154b555ad772579e12f1b88"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3544836,
+          "sha256": "f30294b617edd7372d55ba2f19ff037abe9ae3a7423924de3e1b3fca4cd3c4e2"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551062,
+          "sha256": "ecd58e3f7b50d1c2bfef26071813a7118a0e36418b1b3de0d067274ebc10fae1"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553795,
+          "sha256": "5a9695abdc9991e9bee343a15a30c60ed5720eb8fb23e993ce1afc6dfad21664"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3547656,
+          "sha256": "7fd8dc0698e07014b8c3f7dd08326bcd8634c2d1d966678a2e6850bd74b2ed62"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548947,
+          "sha256": "8f72553aaca49c1e3a99d7547c6e43f807b214fae6bf22ce6d1ca4ae7beff2f4"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551769,
+          "sha256": "ca9b9e6aaaf83734bbdb2b83b3f9a1dbaf120cb8a535697930e8fba41b23928d"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552335,
+          "sha256": "ab5e25a22acdc9f0ae38fd193991373c4d0a5d57a9b4be791a26a9f29bd0b1e2"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548810,
+          "sha256": "765e1d239300aecf74573e8fb788b5a1805d158616f9054f491123c446a0d3ab"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3554587,
+          "sha256": "3160b23102841fc21373e9e80378319376f73a658278af3078bcd2fe0e7c94c3"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552179,
+          "sha256": "41de597100a9e4c0f609ee875b0e807b1e592eae662f0668ea4b24d2fdbf134a"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548165,
+          "sha256": "389d71ca8998bd088375020591e813f4620e5b3f1757e721d60ccb448d377678"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549909,
+          "sha256": "6d8ec42b316ef259d604bfdda26790dca556e47d624ecae49f04a2ab31edc6d6"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552400,
+          "sha256": "81a2a9ab20bc6eda4c7027a2050c5f9ebfae4e616dc74bc7e40266b9a5fcf122"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553738,
+          "sha256": "4858062034bf4728e3a8a5d4f51f8a6e43207a1bac1ad0090e1d33a50e33e3e2"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3545925,
+          "sha256": "e2eb0bcc204016f0045375c143c50373bfb1b3b2b7653dcaab9d089a16ae4043"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553577,
+          "sha256": "2cd91281b5a558ad1be50ca546caee17065439b24eb07a87caa115e7df21664e"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553031,
+          "sha256": "8f3e84d3f507909ff79a707c848326a8c0d8e3fb3b2d3a6c8f4c22bf0b3dc53c"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627291
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8744756
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 660,
+        "2": 8744756
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 1,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T07:55:18.554800+00:00",
+      "finished_utc": "2026-11-20T08:26:44.788973+00:00",
+      "training_seconds": 1869.308474,
+      "training_receipt_sha256": "1cd6239fc9abcbc9e5ae00fd70e06f7da6f36a17f2a053ef8034496fc2528ad7",
+      "model_sha256": "5bd94694104926040c9b2847e9e790ba61a5dc8324ef55412ae37d7920e1320c",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 3420602,
+          "sha256": "c51144c796aeb498be8861c56531728ca9562e72bacc74ccd87a69d71d54b687"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3506240,
+          "sha256": "b70bbc52c0ae60f6cad050d475cbc3316cef0431a1e9e9326aaa4003ba87f913"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3526412,
+          "sha256": "9c6b2adc85097d77cc9f216b8cd52acdb26e3d1ab6bdffdd89b185e50e9a9ab0"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3528746,
+          "sha256": "44131539ad6d2c91f84564e79faedbc0cea13f03885666a020da9b571663955b"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548311,
+          "sha256": "610d2aea5cb6dad6552ec203f4448d501e85b04b6e27205d26bd6ff6e9fca5a5"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550812,
+          "sha256": "dc41b810174e680ed8514bd2d99740e54c832cf302a3deb52dfa3942796cdc75"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3547876,
+          "sha256": "769a92daa0396a383403b2d19037de3f14185050f1a9268720fe99e2eabf92ce"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553206,
+          "sha256": "7f482305e81ae1938aa16292a0c38c5bc3443ed083dc621f509c25ce34fc0dd8"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553505,
+          "sha256": "289ace9ef13e867dd06d5d6d10a1ac7d82d65b86c1f8f1b5e75e84dae7d4c5d1"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3545139,
+          "sha256": "52beb45e8e88fee77e832d64d9d4eb0b49dc237b7ce4328a0192aa4c4752c7a8"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550062,
+          "sha256": "a6d9fe2655d64fa6d41052ce946306fb6462f92aa70393741bb62c73de8745a7"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548897,
+          "sha256": "dbc4c91d0b3292c1415b945d8c18f6ef7ce26d5f61417a5e336f194fb0b63444"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549193,
+          "sha256": "8c0516de66dd9bcf85ff5f3e361f818c89e31c5b1804eb8561abab60421a9cae"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3546490,
+          "sha256": "e4cf52d82923ed984bc66d0302861e33a67942ef7062dfaed7932bf40a8619f6"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552202,
+          "sha256": "eb54aea58189467aed6a510d950cb96e1edaa1ee124994e8dd77b317eaa01352"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551318,
+          "sha256": "7c79ab13143e4e30b994799285c4a38ca33fe82bdd86eafdcb93d1fcdc3dc33a"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3546247,
+          "sha256": "6252c4c43737eed4110ad20d9110ca9a4b98dd201ad113ed4b2cc13ca977ce96"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550858,
+          "sha256": "65800d20a899b255f6b322d1b43432bb11dfe0d870114a9011d56dd749cace74"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549029,
+          "sha256": "3e470732fc5fe3df06fc38d1aeb73ef8f42075e705b5402202fee5878c1dd88c"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550049,
+          "sha256": "8aa0cf01faf7947c3878097d462479b5ae48f61aabdc1f3f5653d25adf878ee9"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3546532,
+          "sha256": "4fac5f0088dcada1ec39cf4a43246158d50a142a20642bdd74fe186a43796457"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553139,
+          "sha256": "06118145d44fdba14c20cd84c1f8d38a6caf21470a2e2a2dba890072bed1d3f9"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3555422,
+          "sha256": "61af6236faa12375d5d83222236c862ce929e03b9b5be34e95b152aff6bd4a21"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3544266,
+          "sha256": "c45fe8991164ab3cf7016d61da1550a60ee1260a2721b45a65d8642528afc9e9"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548134,
+          "sha256": "ba685f1c69b45e99d265cb171572ca6f7db99bd6617b16194abf926b2bb50cd7"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550538,
+          "sha256": "cb71a90db03c62fa92ae9777d6627e3c3a4d03394e6f612ff574bd523e94333e"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551425,
+          "sha256": "212ecf871289328edd019fe17017383950f414fa4e3f872323a8ac0efd6ce516"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550125,
+          "sha256": "b66f018dcd319b083b75a78ae25c1123d494614a46ff2b4265ccb06c08b1d5b9"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551927,
+          "sha256": "5e17747babdc90af5205a44f57f8e98fd60260dd6fa0faae20a6e2845279fb28"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552341,
+          "sha256": "b255975efa0f73fc2cd905faab69825d2090482647c1720fc2e89d1606f119f7"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627159
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8745318
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 660,
+        "2": 8745318
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 2,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T08:26:50.464179+00:00",
+      "finished_utc": "2026-11-20T08:57:05.335670+00:00",
+      "training_seconds": 1799.2741464,
+      "training_receipt_sha256": "ee2d84f6953a20951512eb56373b3c52363779ef1df0617efc652608f6a2bc22",
+      "model_sha256": "8345bd7f9a3eadc262afa0b1e53b0d96373853c15c1b1e4f480879f38658d896",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 3423417,
+          "sha256": "7e2b93e66ed6b66bb7793a4e3e99e66c099d275357ec356d6237146cdb97d798"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3510128,
+          "sha256": "b15325b707ff51418b055c5bfca7daed5f3b759becf7a199ae7decdf1129df30"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3526831,
+          "sha256": "aab92393a8e17aedda0d80860fa6f2eaeb5a389556d78d99763cb03f1cd846bd"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3530118,
+          "sha256": "65988dd352be9799c685c0696dd1bcb253fbcb91f7cb5a74331a01c466a85eb9"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550705,
+          "sha256": "adbe671c0aa4ad367c12219f339e11b45620a46e4dc8f7f46e0137a07cc46024"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552824,
+          "sha256": "22879d97360f83458fe404310ef9bad22ed8938e86db6be4c8e8cab0936255d9"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549764,
+          "sha256": "de2901edce8c89ef5909fc905759eabe48a47fb7470abb3a8cd5e5ca43b579ae"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3555311,
+          "sha256": "7628e839fe5bb20c1932c5663861fc1dbf6e34dffe707ecc14103cc1ac264f22"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551903,
+          "sha256": "c8057c6baa136462436ff171060c40f454d2f890071496406886e925efef1377"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3544088,
+          "sha256": "e1f049caf524802df26e3d6ddc04444855227cd68af740dc2591ec061cee4028"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548574,
+          "sha256": "6d3058279c3b4d49c7dcccc794b71fb0e5cf3e9dd974593d3f0d5bad00fef099"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550457,
+          "sha256": "b91d4926209f2b77c9c0aa7d362b53f685b37fe717d00689383bbdf468160251"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549584,
+          "sha256": "5d018296b48c140a9fc54445f47bee2b34d2b7cad9ff3b0e54150b356f3e83ca"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3545031,
+          "sha256": "0c0ccbe2c779ab16b1f7297c5c6a682d9ae57f84982593c79763a911c6497d89"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551068,
+          "sha256": "8792faa49437d7a6375fd1ece622123b72726fae6b3221fee308879291660052"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552103,
+          "sha256": "cec7bfae3a0a92c4e7d7645267d0536db01147c3522bd4fdf2a41bcdd31314d7"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3545856,
+          "sha256": "02e9362a75799574063b4aac7ff4ab3df1547a426d0936140b5726fb4b4206ee"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552492,
+          "sha256": "e51673a6cf5e767229f1c772bc7bebc17681fe184cfdc5adbf6720a63b90fa01"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548706,
+          "sha256": "00335e532e677bfb7822a9dae50d432d6c97ab888ea4ec5a7a509d4aa7c7471f"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551829,
+          "sha256": "af3a57b551dc9d737dd24854e15c5cdcda99444d41d9c86d891f2ec6dd89b674"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550764,
+          "sha256": "67f637f13e97e26f4fc50ce014adf1dfd4ecf730f8188de6ff50d65b10dc5569"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552976,
+          "sha256": "d3dbc0b176f9850370dc08922b1266a11c22d5b0e18e113ad80c74939be6cb7a"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553777,
+          "sha256": "12f9557f1c61c5d184da321fbdfff4333099f050e7785cdef7b71be8a5179f4e"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3545954,
+          "sha256": "7e6f7af8ad3da9680aa824101267d18cb4edc4c111e57928dbe4fe631ba7ec53"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550773,
+          "sha256": "345d10df761003d863b13fb88fadac8c841e1eedd3417395764165a7135383f9"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551376,
+          "sha256": "5b655df0a62ccc9562646f81473e1c2563d2729dff18a59f9abd9a0837a4fe80"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549340,
+          "sha256": "e05bd5ecd90fc467abd43aa690837dbddee35efdf84096820c9d140f88a0537f"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548189,
+          "sha256": "1bc498c2c969584303104d8f35b9f420f6a8738bc5ba4f980331d556579c1c99"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553893,
+          "sha256": "93913ef582456d6b40559afeb38a624298264c3e387606b9ad63938d4fc381e8"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552748,
+          "sha256": "138393dbcda6a7088aab0586765423207f39d9ae6b03cc33dd79304261d14bb7"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627439
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8745370
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 659,
+        "2": 8745370
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 3,
+      "steps": 1200000,
+      "updates": 299993,
+      "started_utc": "2026-11-20T08:27:14.739485+00:00",
+      "finished_utc": "2026-11-20T08:57:36.793226+00:00",
+      "training_seconds": 1806.653515,
+      "training_receipt_sha256": "52559e80475a3fe68284390014d219c2e1f4228f05dd3f2e9428703f8eb886ec",
+      "model_sha256": "75e9ee8e1573e15889571f4c2b1c289fd10c1ae5a1648fef1f135b1688721a0c",
+      "raw_journal_chunks": [
+        {
+          "name": "chunk_00000.npz",
+          "begin_step": 1,
+          "end_step": 40000,
+          "transitions": 40000,
+          "updates": 9993,
+          "bytes": 3419343,
+          "sha256": "fc390ddf3a36da18ed2f76bb5a9a99998ef9273baeae346c23b2b1eb6f8d031e"
+        },
+        {
+          "name": "chunk_00001.npz",
+          "begin_step": 40001,
+          "end_step": 80000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3509881,
+          "sha256": "4a42c2a1f6e432ce9a7441b7e18b504714a3ea3c112c8dc36563c118fa12f39e"
+        },
+        {
+          "name": "chunk_00002.npz",
+          "begin_step": 80001,
+          "end_step": 120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3527179,
+          "sha256": "73c16e2100ebb3dcf82fb3406e005582d4a0b513f659dd24cca163de8f3f8d56"
+        },
+        {
+          "name": "chunk_00003.npz",
+          "begin_step": 120001,
+          "end_step": 160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3531708,
+          "sha256": "0c62a468fcd952a0d55ebbc6f2394e04a46da4557ee96e95785a1dbea394b9f6"
+        },
+        {
+          "name": "chunk_00004.npz",
+          "begin_step": 160001,
+          "end_step": 200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3544944,
+          "sha256": "1b91985d9eec7ff56e4f0c5399f8ccb7718cf6291bc02af0c4e85e7d3518c806"
+        },
+        {
+          "name": "chunk_00005.npz",
+          "begin_step": 200001,
+          "end_step": 240000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3554527,
+          "sha256": "edeb13388f5e44456f49256145761b8084e38a69cf6722cb3294a88822aa6c31"
+        },
+        {
+          "name": "chunk_00006.npz",
+          "begin_step": 240001,
+          "end_step": 280000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549051,
+          "sha256": "f2c644afffeee7d3dacddcea0e1c9a5b37cc912bd34997abc6e5446584d9e939"
+        },
+        {
+          "name": "chunk_00007.npz",
+          "begin_step": 280001,
+          "end_step": 320000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553458,
+          "sha256": "8e33fb6790b006aae2ca83e3f5cf4fda6f3e73786ff7dabdf15d866fc03716c2"
+        },
+        {
+          "name": "chunk_00008.npz",
+          "begin_step": 320001,
+          "end_step": 360000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3553186,
+          "sha256": "9b25fa52f4262424ccde0df5e7889952edbbfb2f232e8e011440ba14e9e9ce69"
+        },
+        {
+          "name": "chunk_00009.npz",
+          "begin_step": 360001,
+          "end_step": 400000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3546123,
+          "sha256": "53421cb990a1e9cb4c05fa7dbc990e1d01619875693a285baea33e92c2856faf"
+        },
+        {
+          "name": "chunk_00010.npz",
+          "begin_step": 400001,
+          "end_step": 440000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551262,
+          "sha256": "2e9b99c95c5daabd34a3111822915b2066deb985e0ddd1a84f4ebf4fb786a075"
+        },
+        {
+          "name": "chunk_00011.npz",
+          "begin_step": 440001,
+          "end_step": 480000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550988,
+          "sha256": "16eea3c0da44e8243c88d1953e3f1e47a63fa40718e62ac6e6ffd9460c411bca"
+        },
+        {
+          "name": "chunk_00012.npz",
+          "begin_step": 480001,
+          "end_step": 520000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3550878,
+          "sha256": "bb02393d96884a449e1f3973fd5fe085ad9f089380d935fea9c6cfe99debf2ce"
+        },
+        {
+          "name": "chunk_00013.npz",
+          "begin_step": 520001,
+          "end_step": 560000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3547294,
+          "sha256": "84ff672c216a275929d41274ec523d64b1259607fdc1de636a92c57571e1fcae"
+        },
+        {
+          "name": "chunk_00014.npz",
+          "begin_step": 560001,
+          "end_step": 600000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3554157,
+          "sha256": "fc3e7562ad17817367b0689c160eefbc254040dd533941ef1a319e3dd17a2ac5"
+        },
+        {
+          "name": "chunk_00015.npz",
+          "begin_step": 600001,
+          "end_step": 640000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551786,
+          "sha256": "c74fa4aa5a338aac5bb8922716abce7c117dd1cde7463f493e56625c0228031d"
+        },
+        {
+          "name": "chunk_00016.npz",
+          "begin_step": 640001,
+          "end_step": 680000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548130,
+          "sha256": "585bb3038aac58573495daddbafb0154f90fbc6f40a1a6791f414354f9bdab06"
+        },
+        {
+          "name": "chunk_00017.npz",
+          "begin_step": 680001,
+          "end_step": 720000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549846,
+          "sha256": "57162e1d0cd3de91603f79dacaabfedade78f43ffcfd1e389782c7162fedf1e2"
+        },
+        {
+          "name": "chunk_00018.npz",
+          "begin_step": 720001,
+          "end_step": 760000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551195,
+          "sha256": "934e1dc1d999c3d4a497ad694a415d2e35418187bd803e1c820f080ed8f9e0de"
+        },
+        {
+          "name": "chunk_00019.npz",
+          "begin_step": 760001,
+          "end_step": 800000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549172,
+          "sha256": "663f6b21959105c988021fc09497f7d1655b8023dbf06c3a358d453c02def805"
+        },
+        {
+          "name": "chunk_00020.npz",
+          "begin_step": 800001,
+          "end_step": 840000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3545121,
+          "sha256": "f059ee6e755004f87847be0d7248b8045463cb704830c14a794f422e3b33d9aa"
+        },
+        {
+          "name": "chunk_00021.npz",
+          "begin_step": 840001,
+          "end_step": 880000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551676,
+          "sha256": "53b8bd2653a6a2be94c7b2c004123a75d10db9d6ebd594f6823d1790084ea76d"
+        },
+        {
+          "name": "chunk_00022.npz",
+          "begin_step": 880001,
+          "end_step": 920000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3554833,
+          "sha256": "b9ae69f322e33ded7f46c9a08176ceb0cdc5435420d0237909d2cc31783ee8c8"
+        },
+        {
+          "name": "chunk_00023.npz",
+          "begin_step": 920001,
+          "end_step": 960000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548437,
+          "sha256": "6c378b66e2e130a081dbd2151d7a5bc4139a6b1ef0c9a3d138b821faeda9c390"
+        },
+        {
+          "name": "chunk_00024.npz",
+          "begin_step": 960001,
+          "end_step": 1000000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552744,
+          "sha256": "4649e1448333d14280f10cec892992c6c61f48bea7178912d2edbb81da1b0d0d"
+        },
+        {
+          "name": "chunk_00025.npz",
+          "begin_step": 1000001,
+          "end_step": 1040000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3551420,
+          "sha256": "e6fa246a90929265aa4262472f231c6a0c580356436327fc108a8948e243e755"
+        },
+        {
+          "name": "chunk_00026.npz",
+          "begin_step": 1040001,
+          "end_step": 1080000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3549312,
+          "sha256": "ceadc67e05ecba80a4de3b53db8ad6773ca5efd5a9d24d37ffc5c96480e4011f"
+        },
+        {
+          "name": "chunk_00027.npz",
+          "begin_step": 1080001,
+          "end_step": 1120000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3548106,
+          "sha256": "95721825d811e3064bd9b4e33b100de579c69a63bffbb310ea82974e76680b9c"
+        },
+        {
+          "name": "chunk_00028.npz",
+          "begin_step": 1120001,
+          "end_step": 1160000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3555351,
+          "sha256": "ea1cee465d17ca792d9592a9714882682b4c426ef3139c58c90c50d66abeeeb1"
+        },
+        {
+          "name": "chunk_00029.npz",
+          "begin_step": 1160001,
+          "end_step": 1200000,
+          "transitions": 40000,
+          "updates": 10000,
+          "bytes": 3552025,
+          "sha256": "124fbd99b7364255ea929194f783f4e8ad96dcda58a5c954a63d51e5c0348905"
+        }
+      ],
+      "teacher_stage_counts": {
+        "1": {
+          "batches": 19993,
+          "rows": 639776,
+          "labels": 627367
+        },
+        "2": {
+          "batches": 280000,
+          "rows": 8960000,
+          "labels": 8745301
+        }
+      },
+      "independently_recomputed_valid_teacher_labels": {
+        "1": 655,
+        "2": 8745301
+      },
+      "checked_replay_sample_links": 9599776,
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      }
+    }
+  ]
+}

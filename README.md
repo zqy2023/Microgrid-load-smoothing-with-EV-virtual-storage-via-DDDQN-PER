@@ -30,6 +30,10 @@ The first verification command replays the main comparison from repository asset
 
 [The core reconstruction package](reconstruction/README.md) contains the original training code, archived inputs, model weights and frozen audit evidence. Paths and method labels in that archive can differ from the current manuscript labels. The current DDDQN/PER checkpoints use the stored transfer configuration.
 
+## Component ablation
+
+Twelve additional full-budget runs remove Double DQN target selection, the Dueling head or PER one at a time. Each component study holds the auxiliary training targets, seeds, data, constraints and evaluation protocol fixed. [Results and saved-model replay](ablation/README.md) include both terminal regimes.
+
 ## 中文说明
 
 本仓库与新版中英文论文使用同一实验口径。正文主比较为本文 DDDQN/PER、ToU、MPC、DDPG 和无储能基线。表中采用统一期末电量 37.5 kWh。可用上面的入口从仓库文件重放，并在结果报告查看自由期末、归档后半年及外部四季的适用边界。

@@ -1,0 +1,2 @@
+# Preserve byte-for-byte training and release digests on checkout.
+* -text

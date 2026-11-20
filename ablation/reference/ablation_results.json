@@ -1,0 +1,3898 @@
+{
+  "schema": "dddqn_component_ablation_v1",
+  "status": "all_pass",
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "interactions_per_seed": 1200000,
+  "gradient_updates_per_seed": 299993,
+  "new_training_interactions": 14400000,
+  "archived_full_controller_interactions": 4800000,
+  "paired_delta_definition": "same-seed full controller minus ablated controller, percentage points",
+  "archived_inputs_sha256": {
+    "price": "35424a55e2e5eefaabe64b184ec82a8cb898595eb8e54dfeda8bf52d8f0fb838",
+    "load": "e8089a38c28a742927b58765205093a8f3fd317b751c18065a268148182fe805",
+    "ev": "c84eec7a97bee6515719fe935ebcccf68dcf51c14e339da4ea8f17ccbbbe8778",
+    "soh": "eda1f3a51ebdf83f9938ead5360bc250236e93312a0d4672634af15b303c60f6"
+  },
+  "paired_reference_commit": "e190821886143f70af46437d52db749bc1afc06a",
+  "trainer_source_bindings": {
+    "portable_runtime.py": {
+      "bytes": 3803,
+      "sha256": "d783c09887c697cc2f14c7cec2ba44ba7a1b11fa1ae085b6009d132040965922"
+    },
+    "migration_env.py": {
+      "bytes": 13252,
+      "sha256": "155a96cee599eb7b34e4b052de1bdb9cda97d63d2c5ec6806e1125ab15d0841b"
+    },
+    "native_dddqn_per_sb3.py": {
+      "bytes": 15281,
+      "sha256": "0f0d6db3fa25b17999b2238ce6a2f4b064b7303abe59a7cc064d17eb52194ca3"
+    },
+    "train_single.py": {
+      "bytes": 10174,
+      "sha256": "3e325596bcfde3764fbdcf865856e2a7c23e5c572d44b4b7f57629f7ceaadbf7"
+    },
+    "priority_learner.py": {
+      "bytes": 7285,
+      "sha256": "1030dae95e81830610176d557dec0f2c2d648cb5a44f8195577c94f63edbd466"
+    },
+    "teaching_targets.py": {
+      "bytes": 3486,
+      "sha256": "2cd8ffeb44c43820511d9619673ec3f07e5a63313dcafede76e721698922e059"
+    },
+    "evaluate_single.py": {
+      "bytes": 1943,
+      "sha256": "234ad94961657aa22d8d5a0bf1d47fa8c183cedbc6fbd6bc2e274b0f8eb434a9"
+    },
+    "full.json": {
+      "bytes": 823,
+      "sha256": "49b27935c765a83d7e84edc981ae05d865e91dac9496a434d1a77fa020e4f96e"
+    },
+    "train.py": {
+      "bytes": 8665,
+      "sha256": "6415460372f6ff480d362d7bbf7ef47c87b7928fece3c8ae8a08eb48eb17dfa0"
+    },
+    "variants.py": {
+      "bytes": 4394,
+      "sha256": "5c359ab64b44a912ce3592fa12cb8dfbd9befb3d42cab60c3f87f4914fdbf2ef"
+    }
+  },
+  "sealed_manifest_sha256": "8074d96ea92d110aedf090d019fcf6f7569eb09c507727aefea563c51647b6b2",
+  "teacher_provenance": {
+    "ensemble_receipt": {
+      "sha256": "04dd569acc3621b2815f15f0f8444efa9d66cc7e73059209450d50e6ed178c94"
+    },
+    "ensemble_models": [
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "04da45e362fb18b4013d561c29e69dca07dae898168e62e07c447cf4615c1c59",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "b66a52219515da96696dd0389f71a90c6af477a54aabeb900565c5eee62a021e",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "cf9d82a7f4cd3cf29ad94bad55c76fa18da4d3c2648aa91108487462f5ec1954",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "71cd0eb1e2844d0f1a54f6f93ceaa8089338774f28da3f8d54a351233412bfa0",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "bfc0eadecdc4bc6eafc7be6a35a4345824d850d829cbd579adee3a90a5ef0835",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "e6cc907e7ca12a9c31a0af0d1cfc4b3ffaca3bbbdbc1468351d0e152d265b424",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "9a3dc9892813ae7fb530049ea7ae3218768c7a61a8942144fb3412535c8f808f",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "7a574547bd84a069dc3cdc6316d7536bcb03c0b1048506e4243fa6ea8c4a6102",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "f9f9600ba362ec1693f80937b63d7e0aa860ba111b75c637cd6fa6e37dbf8efa",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "7d86c18b37195973be0ea0c95626b91b939edd16e9c8b51468d2528ee8343e15",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "d7eeb1b0edf3b4d396d113531737e2eba95a5c5e3e4a5bf3fcb4bbbf03eb3b75",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "8c043c4d68a1ffb7c6bd47e2ff75482bf3d1efa7a95b390cc14539e79aa410d6",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "1fa4e84f3cdd66c3e04bd9cf8d74413b23b551fd1c2a309e3ac2aeb091b7a327",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "d96f05a55613726f49748c42905f21383dfab6e753f5a6e1094c8a42d49ba4e5",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "base",
+        "kind": "portable_state_dict",
+        "sha256": "330579c74aee124cb28f41f2040411a815be9f8bcb9390437c4e22ab45b3fea5",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "f9ff133c66b8f58988f65cf95e262055026bf6ff9c9f758e2d36c8a255ca1901",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "cost",
+        "kind": "portable_state_dict",
+        "sha256": "6c5fe8aaa31054215a2f9e040dc064980f96015ee4f3587b48113fa980651bab",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "6c5fe8aaa31054215a2f9e040dc064980f96015ee4f3587b48113fa980651bab",
+        "all_weight_tensors_preserved": true
+      },
+      {
+        "role": "cost",
+        "kind": "portable_state_dict",
+        "sha256": "dc4fa7cb113e4f316241a0aa2e421edb5ffba5376d17c994557ae021ffc3aacf",
+        "bytes": 150194,
+        "original_checkpoint_sha256": "dc4fa7cb113e4f316241a0aa2e421edb5ffba5376d17c994557ae021ffc3aacf",
+        "all_weight_tensors_preserved": true
+      }
+    ],
+    "offline_DP": {
+      "manifest": {
+        "sha256": "07a104edb9eed9ac307d2a724b6045e5da35310dfc1ed246bf6da389b9da2cb8"
+      },
+      "wrapper": {
+        "sha256": "db0b3eb4edffd38797ff42d8f396c9b1101ea655bc8102fe677d9f7ae390b79c"
+      },
+      "teacher_source_sha256": "db0b3eb4edffd38797ff42d8f396c9b1101ea655bc8102fe677d9f7ae390b79c",
+      "value_table_sha256": "9c8230111666b73607ffb34a86ec997fb3022c9821ec7858b43c471678d7d329",
+      "offsets_sha256": "e039fcdfb7fd42871f1e8d357c520d4bfa77e53b0c1154aa3b1c4bc8b1c6ed29",
+      "information": "Full future offline load/price/availability; training supervision, not independent RL discovery"
+    }
+  },
+  "limits": [
+    "Main 17,520-row archived window was used for training and evaluation.",
+    "Equal-terminal evaluation applies a common future-availability wrapper.",
+    "TD targets and historical gradient steps were not reconstructed.",
+    "Teacher labels were audited on preset stage-1 batches and every valid stage-2 row."
+  ],
+  "runs": [
+    {
+      "variant": "full",
+      "seed": 0,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "published archived full controller",
+      "network_parameters": 36502,
+      "weights_sha256": "618cca848b4e16e308f6142d848a77afa91fb7d30518735a5b72e93a862aff85",
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "80332adc81944ac13ee1069830e07b1b5757c0e3862aae8eeb9cafb81d2fbad1",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.103515625e-05,
+            "batch1_rechecks": 1,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 87.00089591284062,
+            "daily_pct": 95.51839505959896,
+            "saving_pct": 8.593373491956992,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.6174731487459,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "544a7cfa07b55fe8cf60b1281356cc97d0e58a67285eeace908f0e9dfd27f32d",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.103515625e-05,
+            "batch1_rechecks": 1,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 77.68538619205162,
+            "daily_pct": 94.07588227429086,
+            "saving_pct": 8.91563525406156,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.30025327257664,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 72.75000000000009,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 134,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 87.00089591284062,
+        "daily_pct": 95.51839505959896,
+        "saving_pct": 8.593373491956992,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.6174731487459,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.68538619205162,
+        "daily_pct": 94.07588227429086,
+        "saving_pct": 8.91563525406156,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.30025327257664,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 72.75000000000009,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 134,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        }
+      }
+    },
+    {
+      "variant": "full",
+      "seed": 1,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "published archived full controller",
+      "network_parameters": 36502,
+      "weights_sha256": "644f38dcc93b75b75a12c5dfe2054d9df4db4e31173e41de6ef0dd283b55e6fe",
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "8342d558105fa0c5231f7ef0aa28f6cb362bd4b43d85b3803fb068b8a28e4cc3",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 5.340576171875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.136590821460004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.47745129162173,
+            "daily_pct": 95.41164613691375,
+            "saving_pct": 8.631089792877779,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.46331070358326,
+            "final_energy_kwh": 64.5000000000001,
+            "energy_change_kwh": 27.0000000000001,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 64.5000000000001,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.8,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "03bd02f25a967d5bc8ab942129fa8add9639655f91f6e8ac52207369cd2dc436",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 5.340576171875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 8.527900607901984e-15
+          },
+          "metrics": {
+            "pooled_pct": 80.2919239737437,
+            "daily_pct": 94.28824925506764,
+            "saving_pct": 8.877648540865676,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.45552100687183,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 60.07500000000011,
+            "power_min_kw": -1.0000000000000284,
+            "power_max_kw": 0.8,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 91,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.47745129162173,
+        "daily_pct": 95.41164613691375,
+        "saving_pct": 8.631089792877779,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.46331070358326,
+        "final_energy_kwh": 64.5000000000001,
+        "energy_change_kwh": 27.0000000000001,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 64.5000000000001,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.8,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 80.2919239737437,
+        "daily_pct": 94.28824925506764,
+        "saving_pct": 8.877648540865676,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.45552100687183,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 60.07500000000011,
+        "power_min_kw": -1.0000000000000284,
+        "power_max_kw": 0.8,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 91,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        }
+      }
+    },
+    {
+      "variant": "full",
+      "seed": 2,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "published archived full controller",
+      "network_parameters": 36502,
+      "weights_sha256": "ae00ab55a3864ea2c27e36883919609ae69bef7edae02a91ab16530b6ca6af15",
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "c4f9f911feeb1a6049bb2d48acf0c562b875e66fccca7866b1e80658cbae45c7",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 7.62939453125e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.95497610432193,
+            "daily_pct": 95.35714980821335,
+            "saving_pct": 8.503248599143125,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.9858516351563,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "c60bd4951eb5e3e8e72e46e4e163323401b1189e3cc04fd1d5df3ed11733b661",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 7.62939453125e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 77.76597326919072,
+            "daily_pct": 94.01821735161957,
+            "saving_pct": 8.812962350120719,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.7199207780593,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 71.55000000000064,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 128,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.95497610432193,
+        "daily_pct": 95.35714980821335,
+        "saving_pct": 8.503248599143125,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.9858516351563,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.76597326919072,
+        "daily_pct": 94.01821735161957,
+        "saving_pct": 8.812962350120719,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.7199207780593,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 71.55000000000064,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 128,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        }
+      }
+    },
+    {
+      "variant": "full",
+      "seed": 3,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "published archived full controller",
+      "network_parameters": 36502,
+      "weights_sha256": "b784766386c6b35e5640886f013f1a5002a5eee06c860742d3af683916bbd811",
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "898bf6e79cfe70ca716df162036ae18c3b40d84a87b79a8b5e0e2e8e5837047c",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.1379786002407855e-14
+          },
+          "metrics": {
+            "pooled_pct": 87.08958247946121,
+            "daily_pct": 95.61097839333522,
+            "saving_pct": 8.555653339174777,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.7716513380922,
+            "final_energy_kwh": 70.42500000000001,
+            "energy_change_kwh": 32.92500000000001,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 70.42500000000001,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "4e76112c6843e202da24a2b1a44665d418d5080d4dae22bf88df7bcde4e856f8",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.136590821460004e-14
+          },
+          "metrics": {
+            "pooled_pct": 79.21755399012949,
+            "daily_pct": 94.68137690596112,
+            "saving_pct": 8.828987728992836,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.6544182889162,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 65.50000000000004,
+            "power_min_kw": -1.0000000000000284,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 108,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 87.08958247946121,
+        "daily_pct": 95.61097839333522,
+        "saving_pct": 8.555653339174777,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.7716513380922,
+        "final_energy_kwh": 70.42500000000001,
+        "energy_change_kwh": 32.92500000000001,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 70.42500000000001,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 79.21755399012949,
+        "daily_pct": 94.68137690596112,
+        "saving_pct": 8.828987728992836,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.6544182889162,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 65.50000000000004,
+        "power_min_kw": -1.0000000000000284,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 108,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 0.0,
+          "daily_pct": 0.0,
+          "saving_pct": 0.0
+        }
+      }
+    },
+    {
+      "variant": "no_double",
+      "seed": 0,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "e39b30f1980eacb9cd84b3d468223640948abde3c97e6c59fddded41b6485408",
+      "weights_sha256": "08c834c0c8a7245d875cf14ff4f1a2267f09f592054bf7afb8716dd31284cf4c",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.708944180085382e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627245
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8504973
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 661,
+          "2": 8504973
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299728,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "156fe9de9129f501e8531470689a50f4d73d4c782a0fd25e1b97a4b78c5b50e2",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 87.00645380875926,
+            "daily_pct": 95.49886551149677,
+            "saving_pct": 8.596170357062725,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.60604118026106,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.19999999999995874,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "259c4658a6dbfdfe10d2b4b9ca5391e49173993371bd526b43e6f3e82df3edc2",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 77.6647201068448,
+            "daily_pct": 94.04252715785806,
+            "saving_pct": 8.918768909325703,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.28744470052624,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.19999999999995874,
+            "energy_max_kwh": 72.97500000000032,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 135,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "9ab786be6193a2fafcc0b180d34627af76d86a0116f1ddab46d2178b9f5b346c",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.172325134277344e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 8.520961713998076e-15
+          },
+          "metrics": {
+            "pooled_pct": -48.906841267426145,
+            "daily_pct": -54.810905348719864,
+            "saving_pct": -0.7565030320504418,
+            "baseline_bill": 408.74221861351674,
+            "bill": 411.8343658905982,
+            "final_energy_kwh": 74.9,
+            "energy_change_kwh": 37.400000000000006,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -0.8,
+            "power_max_kw": 1.0,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 87.00645380875926,
+        "daily_pct": 95.49886551149677,
+        "saving_pct": 8.596170357062725,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.60604118026106,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.19999999999995874,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.6647201068448,
+        "daily_pct": 94.04252715785806,
+        "saving_pct": 8.918768909325703,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.28744470052624,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.19999999999995874,
+        "energy_max_kwh": 72.97500000000032,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 135,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": -0.005557895918641975,
+          "daily_pct": 0.019529548102184435,
+          "saving_pct": -0.0027968651057328486
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 0.02066608520682678,
+          "daily_pct": 0.033355116432801424,
+          "saving_pct": -0.0031336552641434423
+        }
+      }
+    },
+    {
+      "variant": "no_double",
+      "seed": 1,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "61507640025400114231e6fb8a217a8bb71e98c9b07987ddee324db1b9d4a2c5",
+      "weights_sha256": "a5cc068e82ffbf5b3e87b3f852330eb09205edc361e80ecc6ace3722932eb3b0",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.7533531010703882e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627530
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8511778
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 663,
+          "2": 8511778
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299728,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "eb890516be954d41a7c9721cc7229df10593c2f7f1c59c8847aee0225b10a216",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.866455078125e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 87.21736444895292,
+            "daily_pct": 95.55361088283044,
+            "saving_pct": 8.620992924906153,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.50458086574093,
+            "final_energy_kwh": 73.50000000000017,
+            "energy_change_kwh": 36.00000000000017,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 73.50000000000017,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "d69a013f7d1ba299965312b1d2c4585898b5f2b0f38e2c5f8bfc25accc48e2e9",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.866455078125e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 78.58496447742664,
+            "daily_pct": 94.89060490320614,
+            "saving_pct": 8.908697646245214,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.32861020468386,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 68.0500000000002,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 115,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "315f7a8ae00f76ccb254381cb091d12767bebdfab7ebcce933ae2e7779150d31",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.76837158203125e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 5.68295410730002e-15
+          },
+          "metrics": {
+            "pooled_pct": -24.15096431936059,
+            "daily_pct": -29.554163918089937,
+            "saving_pct": -0.031462641358927526,
+            "baseline_bill": 408.74221861351674,
+            "bill": 408.87081971184153,
+            "final_energy_kwh": 0.0,
+            "energy_change_kwh": -37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 37.5,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.7,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 87.21736444895292,
+        "daily_pct": 95.55361088283044,
+        "saving_pct": 8.620992924906153,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.50458086574093,
+        "final_energy_kwh": 73.50000000000017,
+        "energy_change_kwh": 36.00000000000017,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 73.50000000000017,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 78.58496447742664,
+        "daily_pct": 94.89060490320614,
+        "saving_pct": 8.908697646245214,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.32861020468386,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 68.0500000000002,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 115,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": -0.7399131573311877,
+          "daily_pct": -0.14196474591669528,
+          "saving_pct": 0.010096867971626011
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 1.7069594963170687,
+          "daily_pct": -0.6023556481384986,
+          "saving_pct": -0.031049105379537423
+        }
+      }
+    },
+    {
+      "variant": "no_double",
+      "seed": 2,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "2ac53a9122f5f5158da2dfa3ee369bf6e4afc17b194b45f634d72ce84aa90ca3",
+      "weights_sha256": "68f472f60aaf2c766bf69f9120823610480d5203232654c19dd74c35d60da326",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.6201263381153694e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 626885
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8506887
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 661,
+          "2": 8506887
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299734,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "9244be3f9c0fddd103f1bf4e6654a42c4dd847a04db9bd2503c64913244d2b8f",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.103515625e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.66866007671284,
+            "daily_pct": 95.09926191313843,
+            "saving_pct": 8.545749904879003,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.8121308551518,
+            "final_energy_kwh": 73.1499999999999,
+            "energy_change_kwh": 35.649999999999906,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 73.1499999999999,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "4de9cb1762f1bf10aa5de96ca76a96d4bb641c2ef934f82bd3991fa4f47b846b",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.103515625e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 78.23101953868735,
+            "daily_pct": 94.35418794113288,
+            "saving_pct": 8.834890483772602,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.63029123807013,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 67.07499999999992,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 113,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "4cfb8a4f19787ebe6c30d760257cfa725a24749cde75a0f9e9ef33aeeca044ce",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 5.364418029785156e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": -164.09948549798506,
+            "daily_pct": -194.62531390059019,
+            "saving_pct": -2.535110367561282,
+            "baseline_bill": 408.74221861351674,
+            "bill": 419.10428497418786,
+            "final_energy_kwh": 72.67499999999998,
+            "energy_change_kwh": 35.17499999999998,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.8,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.66866007671284,
+        "daily_pct": 95.09926191313843,
+        "saving_pct": 8.545749904879003,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.8121308551518,
+        "final_energy_kwh": 73.1499999999999,
+        "energy_change_kwh": 35.649999999999906,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 73.1499999999999,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 78.23101953868735,
+        "daily_pct": 94.35418794113288,
+        "saving_pct": 8.834890483772602,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.63029123807013,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 67.07499999999992,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 113,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.2863160276090895,
+          "daily_pct": 0.2578878950749157,
+          "saving_pct": -0.04250130573587718
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": -0.4650462694966251,
+          "daily_pct": -0.33597058951330894,
+          "saving_pct": -0.021928133651883286
+        }
+      }
+    },
+    {
+      "variant": "no_double",
+      "seed": 3,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "b5f255b951b4273d4a0e6920226dea0e6c6daa59b1ae7af8ff6cfbaae4f5740d",
+      "weights_sha256": "7c8333c61420515b2c1c3f472f5071ff701c2a44afd19135c132a88f0c725e28",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.7533531010703882e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627134
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8502173
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 647,
+          "2": 8502173
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299732,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "2d9993a5c52955c628410f3f55ba4bdf3928fd4cba4880a68604aaeb977471c6",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.103515625e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 87.25451989212488,
+            "daily_pct": 95.54628585490804,
+            "saving_pct": 8.622833089947171,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.4970593343262,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "28ee03786ab231be56984086de23866a71e354d7ead2b852d287e3d81dbcf43e",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.103515625e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 78.18813074775782,
+            "daily_pct": 94.43651295340683,
+            "saving_pct": 8.92191970595425,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.27456606448277,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 70.00000000000009,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 121,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "2921e3d28e6ace32a7e01b51fecc38b61357734c729edbe36f1498ca9a03131f",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.7997961044311523e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.136590821460004e-14
+          },
+          "metrics": {
+            "pooled_pct": 0.614932247564226,
+            "daily_pct": 2.739280536026667,
+            "saving_pct": 0.7331215859793043,
+            "baseline_bill": 408.74221861351674,
+            "bill": 405.7456411778502,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -0.5,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 87.25451989212488,
+        "daily_pct": 95.54628585490804,
+        "saving_pct": 8.622833089947171,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.4970593343262,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 78.18813074775782,
+        "daily_pct": 94.43651295340683,
+        "saving_pct": 8.92191970595425,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.27456606448277,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 70.00000000000009,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 121,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": -0.16493741266366158,
+          "daily_pct": 0.06469253842718103,
+          "saving_pct": -0.0671797507723948
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 1.0294232423716636,
+          "daily_pct": 0.24486395255428306,
+          "saving_pct": -0.09293197696141497
+        }
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 0,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36431,
+      "receipt_sha256": "66e9aa0610f911dd2c49204946a595e0aa7cc0dffdc023df79334a37c980b1fd",
+      "weights_sha256": "6c912021b95046660c2d3f8e49a731ba4cb4d30c3357659145178ccf8aef2e88",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.842170943040401e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 626876
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8497406
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 659,
+          "2": 8497406
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299735,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "738e5b6c0aaf6b61356c8f292262b2ce1ba33c70d363f0f799e582405666a534",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 7.62939453125e-05,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.85930518612889,
+            "daily_pct": 95.17939931022802,
+            "saving_pct": 8.660900286545768,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.341462630385,
+            "final_energy_kwh": 73.37500000000023,
+            "energy_change_kwh": 35.87500000000023,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 73.37500000000023,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "1605c69334824de24eddad10ed83748734566265c290de81d28f1c111a07fff1",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 7.62939453125e-05,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 78.16620026218989,
+            "daily_pct": 94.44120035643876,
+            "saving_pct": 8.946814520545331,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.17281044700337,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 68.45000000000022,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 116,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "85839eb6542d8a8aad47f5d1a23aa11d4a2e4eab89ba912832bd46cbd8676ca2",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.725290298461914e-07,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": -43.24410087925421,
+            "daily_pct": -45.52359197354572,
+            "saving_pct": -0.6325762562927678,
+            "baseline_bill": 408.74221861351674,
+            "bill": 411.32782483791004,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -0.8,
+            "power_max_kw": 1.0,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.85930518612889,
+        "daily_pct": 95.17939931022802,
+        "saving_pct": 8.660900286545768,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.341462630385,
+        "final_energy_kwh": 73.37500000000023,
+        "energy_change_kwh": 35.87500000000023,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 73.37500000000023,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 78.16620026218989,
+        "daily_pct": 94.44120035643876,
+        "saving_pct": 8.946814520545331,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.17281044700337,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 68.45000000000022,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 116,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.14159072671172623,
+          "daily_pct": 0.33899574937093746,
+          "saving_pct": -0.06752679458877608
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": -0.4808140701382655,
+          "daily_pct": -0.3653180821478941,
+          "saving_pct": -0.031179266483771784
+        }
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 1,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36431,
+      "receipt_sha256": "55b24fd9fad06fb19a484ce46c78e988552ed80acf9da938299c72dc2af5677d",
+      "weights_sha256": "3483f17bf68d72eddb9ba1b5f4d3a01e50aafc7ae22b93b72d9ad6cbff1cb92b",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.7533531010703882e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627434
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8504942
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 658,
+          "2": 8504942
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299727,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "99c92bc33123570262ead6d3c80d459057083b3c84c64d4423abfe3a906267c7",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 9.1552734375e-05,
+            "batch1_rechecks": 1,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.21559575540431,
+            "daily_pct": 94.62371052234488,
+            "saving_pct": 8.619309390982002,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.5114621796536,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "ee09dc1ae6846c6e7de8279ea04883f8610b7a82425f40a0f8c84694dc5ddfec",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 9.1552734375e-05,
+            "batch1_rechecks": 1,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 76.82038157981047,
+            "daily_pct": 93.16114843632975,
+            "saving_pct": 8.969058255373424,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.0818909117645,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 74.92500000000041,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 146,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "8055532dbaf9963580fa3861498693d87bf556c67efeb359419576e7520887ed",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.5762786865234375e-07,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": -8.080563842786216,
+            "daily_pct": -6.924679592993099,
+            "saving_pct": -0.5938084674411938,
+            "baseline_bill": 408.74221861351674,
+            "bill": 411.1693645176508,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.7,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.21559575540431,
+        "daily_pct": 94.62371052234488,
+        "saving_pct": 8.619309390982002,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.5114621796536,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 76.82038157981047,
+        "daily_pct": 93.16114843632975,
+        "saving_pct": 8.969058255373424,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.0818909117645,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 74.92500000000041,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 146,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.26185553621742486,
+          "daily_pct": 0.7879356145688661,
+          "saving_pct": 0.011780401895777004
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 3.471542393933234,
+          "daily_pct": 1.1271008187378868,
+          "saving_pct": -0.09140971450774771
+        }
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 2,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36431,
+      "receipt_sha256": "0ec92e4c7c0407fcc42517ca3dc2d4e98425decc438dc2d28c197f04e9bd291d",
+      "weights_sha256": "1e198e50658d758919cdfe1d2b9325e857a2e2810ce351f3b6dfae735d6018b1",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.708944180085382e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 626886
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8496632
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 660,
+          "2": 8496632
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299728,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "73569ba429741c59ec431c3195a0355faf77862b9db4a7d58f3e50ad067abb43",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 7.62939453125e-05,
+            "batch1_rechecks": 1,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.13987478085652,
+            "daily_pct": 94.80518323007686,
+            "saving_pct": 8.47252401511671,
+            "baseline_bill": 408.74221861351674,
+            "bill": 374.11143598156553,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 1.2999999999993348,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "faea5b6795f6f9bd42787ba8c2aacf42ac600c2977d77d3f6b33f03ec2f9657c",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 7.62939453125e-05,
+            "batch1_rechecks": 1,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 76.72629045934896,
+            "daily_pct": 93.42374964512776,
+            "saving_pct": 8.828363474471345,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.6569698806971,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 1.2999999999993348,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 147,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "95c07df9f13eee3a6a8744644bf05c61fbebb4eabfc79c37d4e5cb4e9fabcd1f",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.5762786865234375e-07,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.1379786002407855e-14
+          },
+          "metrics": {
+            "pooled_pct": -94.56074404569925,
+            "daily_pct": -114.26919666200828,
+            "saving_pct": 8.433332783582129,
+            "baseline_bill": 408.74221861351674,
+            "bill": 374.2716270908421,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -0.7,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.13987478085652,
+        "daily_pct": 94.80518323007686,
+        "saving_pct": 8.47252401511671,
+        "baseline_bill": 408.74221861351674,
+        "bill": 374.11143598156553,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 1.2999999999993348,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 76.72629045934896,
+        "daily_pct": 93.42374964512776,
+        "saving_pct": 8.828363474471345,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.6569698806971,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 1.2999999999993348,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 147,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.815101323465413,
+          "daily_pct": 0.5519665781364864,
+          "saving_pct": 0.03072458402641587
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 1.0396828098417643,
+          "daily_pct": 0.5944677064918125,
+          "saving_pct": -0.01540112435062646
+        }
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "seed": 3,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36431,
+      "receipt_sha256": "9118a620857b484e43820c40cb8a6df356941f5d014ddb971d66e4623fddc1db",
+      "weights_sha256": "92980e2275120a10fd2870fc494335b45ec87b9c412d1bc69cc165173a0bf9fe",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.842170943040401e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 626975
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8490445
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 659,
+          "2": 8490445
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 9299726,
+        "exact_uniform_draws_recomputed": 0
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "4fc3a8a46dc3683910397c702880f2745e6d2ca7ca149130b2725c23e2079791",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 9.1552734375e-05,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 85.93717707918249,
+            "daily_pct": 94.37954613222797,
+            "saving_pct": 8.681921853248207,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.2555386122582,
+            "final_energy_kwh": 70.5999999999998,
+            "energy_change_kwh": 33.099999999999795,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 70.5999999999998,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "318507c05012ad9785e6dcacac52303a248df6ec1bb077c34bc18d778fd5f058",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 9.1552734375e-05,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 77.96236937003029,
+            "daily_pct": 93.49803757624862,
+            "saving_pct": 8.955855403759312,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.1358565403723,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 65.9249999999998,
+            "power_min_kw": -1.0000000000000284,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 109,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "ea6d6a2a2248956f66075335871178a4ba586a0903fb84312b892127a6fc3932",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.2782554626464844e-07,
+            "batch1_rechecks": 0,
+            "method": "Independent named linear/ReLU layers with a direct action head"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.7041923427996153e-14
+          },
+          "metrics": {
+            "pooled_pct": -103.76379123496821,
+            "daily_pct": -132.46404418943118,
+            "saving_pct": 8.473109242540989,
+            "baseline_bill": 408.74221861351674,
+            "bill": 374.10904391000776,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -0.9,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 85.93717707918249,
+        "daily_pct": 94.37954613222797,
+        "saving_pct": 8.681921853248207,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.2555386122582,
+        "final_energy_kwh": 70.5999999999998,
+        "energy_change_kwh": 33.099999999999795,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 70.5999999999998,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.96236937003029,
+        "daily_pct": 93.49803757624862,
+        "saving_pct": 8.955855403759312,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.1358565403723,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 65.9249999999998,
+        "power_min_kw": -1.0000000000000284,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 109,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 1.1524054002787238,
+          "daily_pct": 1.2314322611072441,
+          "saving_pct": -0.12626851407343054
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 1.2551846200992003,
+          "daily_pct": 1.1833393297124957,
+          "saving_pct": -0.1268676747664763
+        }
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 0,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "5cf54d253c365f007721c2c03a584bc87ff9c6684ca9bda12d3fd4232a3f6a6a",
+      "weights_sha256": "9e628907f4a775b4e98539223cf93aa2fbc2026e57b31741c4ebd9129aade0b6",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.6201263381153694e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627291
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8744756
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 660,
+          "2": 8744756
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "db1b0cb15ef8ebab833deb2eaae6e9c57d37a7dcf1940d3c0f0255e59cb61bfb",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.814697265625e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.25150593604684,
+            "daily_pct": 95.13458645860541,
+            "saving_pct": 8.5460643767231,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.81084547595924,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 3.924999999998988,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "1ba1f418d1005bc0f698f13b39b015d0902e9a9ccb5f8012af3b2c28db6d9120",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.814697265625e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 76.80706240837117,
+            "daily_pct": 93.70746056580079,
+            "saving_pct": 8.899161854723046,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.36758701051394,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 3.924999999998988,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 147,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "9ab786be6193a2fafcc0b180d34627af76d86a0116f1ddab46d2178b9f5b346c",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.172325134277344e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 8.520961713998076e-15
+          },
+          "metrics": {
+            "pooled_pct": -48.906841267426145,
+            "daily_pct": -54.810905348719864,
+            "saving_pct": -0.7565030320504418,
+            "baseline_bill": 408.74221861351674,
+            "bill": 411.8343658905982,
+            "final_energy_kwh": 74.9,
+            "energy_change_kwh": 37.400000000000006,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -0.8,
+            "power_max_kw": 1.0,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.25150593604684,
+        "daily_pct": 95.13458645860541,
+        "saving_pct": 8.5460643767231,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.81084547595924,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 3.924999999998988,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 76.80706240837117,
+        "daily_pct": 93.70746056580079,
+        "saving_pct": 8.899161854723046,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.36758701051394,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 3.924999999998988,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 147,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.7493899767937791,
+          "daily_pct": 0.38380860099354663,
+          "saving_pct": 0.04730911523389203
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 0.8783237836804574,
+          "daily_pct": 0.36842170849007516,
+          "saving_pct": 0.016473399338513772
+        }
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 1,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "1cd6239fc9abcbc9e5ae00fd70e06f7da6f36a17f2a053ef8034496fc2528ad7",
+      "weights_sha256": "5bd94694104926040c9b2847e9e790ba61a5dc8324ef55412ae37d7920e1320c",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.842170943040401e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627159
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8745318
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 660,
+          "2": 8745318
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "f853d71c67900ab0c06fdc79778cdda14532963314a67c9e7a3ebed86bdd4081",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.866455078125e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.86424351274738,
+            "daily_pct": 95.22404973402791,
+            "saving_pct": 8.403033532597247,
+            "baseline_bill": 408.74221861351674,
+            "bill": 374.39547292154083,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "38a8e562b792ea23c8b026bbb472a4eebb13c8a2ce45d10bf02812e37d202e43",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 6.866455078125e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 77.6459058386625,
+            "daily_pct": 93.97233136515581,
+            "saving_pct": 8.706133707832452,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.15657454066303,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 70.825,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 124,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "315f7a8ae00f76ccb254381cb091d12767bebdfab7ebcce933ae2e7779150d31",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.76837158203125e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 5.68295410730002e-15
+          },
+          "metrics": {
+            "pooled_pct": -24.15096431936059,
+            "daily_pct": -29.554163918089937,
+            "saving_pct": -0.031462641358927526,
+            "baseline_bill": 408.74221861351674,
+            "bill": 408.87081971184153,
+            "final_energy_kwh": 0.0,
+            "energy_change_kwh": -37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 37.5,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.7,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.86424351274738,
+        "daily_pct": 95.22404973402791,
+        "saving_pct": 8.403033532597247,
+        "baseline_bill": 408.74221861351674,
+        "bill": 374.39547292154083,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.6459058386625,
+        "daily_pct": 93.97233136515581,
+        "saving_pct": 8.706133707832452,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.15657454066303,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 70.825,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 124,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": -0.3867922211256456,
+          "daily_pct": 0.18759640288583057,
+          "saving_pct": 0.22805626028053183
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 2.6460181350812064,
+          "daily_pct": 0.31591788991183023,
+          "saving_pct": 0.1715148330332248
+        }
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 2,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "ee2d84f6953a20951512eb56373b3c52363779ef1df0617efc652608f6a2bc22",
+      "weights_sha256": "8345bd7f9a3eadc262afa0b1e53b0d96373853c15c1b1e4f480879f38658d896",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 5.960464477539063e-08,
+          "next_observation": 5.960464477539063e-08,
+          "power": 2.4868995751603507e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627439
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8745370
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 659,
+          "2": 8745370
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "bc57fa77910d403cbadf08cd6fa7cf159fa867b2cf7520555bd1bbaeb6818eeb",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 86.77732717217573,
+            "daily_pct": 95.06226490844651,
+            "saving_pct": 8.522631368392164,
+            "baseline_bill": 408.74221861351674,
+            "bill": 373.906626074099,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "a6b93da52dd24348a68d82fc9105f66e5d02362a1714aaa79d264965cc353e84",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 77.6317852208674,
+            "daily_pct": 93.88262164812018,
+            "saving_pct": 8.821073193032992,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.6867683387914,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 70.47500000000002,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 123,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "4cfb8a4f19787ebe6c30d760257cfa725a24749cde75a0f9e9ef33aeeca044ce",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 5.364418029785156e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": -164.09948549798506,
+            "daily_pct": -194.62531390059019,
+            "saving_pct": -2.535110367561282,
+            "baseline_bill": 408.74221861351674,
+            "bill": 419.10428497418786,
+            "final_energy_kwh": 72.67499999999998,
+            "energy_change_kwh": 35.17499999999998,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.8,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 86.77732717217573,
+        "daily_pct": 95.06226490844651,
+        "saving_pct": 8.522631368392164,
+        "baseline_bill": 408.74221861351674,
+        "bill": 373.906626074099,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.6317852208674,
+        "daily_pct": 93.88262164812018,
+        "saving_pct": 8.821073193032992,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.6867683387914,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 70.47500000000002,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 123,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.17764893214619804,
+          "daily_pct": 0.29488489976684207,
+          "saving_pct": -0.019382769249038034
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 0.13418804832332398,
+          "daily_pct": 0.13559570349939065,
+          "saving_pct": -0.008110842912273597
+        }
+      }
+    },
+    {
+      "variant": "no_per",
+      "seed": 3,
+      "steps": 1200000,
+      "updates": 299993,
+      "training_source": "new full-budget training",
+      "network_parameters": 36502,
+      "receipt_sha256": "52559e80475a3fe68284390014d219c2e1f4228f05dd3f2e9428703f8eb886ec",
+      "weights_sha256": "75e9ee8e1573e15889571f4c2b1c289fd10c1ae5a1648fef1f135b1688721a0c",
+      "training_audit": {
+        "transition_rows": 1200000,
+        "updates": 299993,
+        "replay_sample_links": 9599776,
+        "maximum_errors": {
+          "observation": 0.0,
+          "next_observation": 0.0,
+          "power": 2.842170943040401e-14,
+          "energy": 1.4210854715202004e-14,
+          "reward": 0.0
+        },
+        "teacher_stage_counts": {
+          "1": {
+            "batches": 19993,
+            "rows": 639776,
+            "labels": 627367
+          },
+          "2": {
+            "batches": 280000,
+            "rows": 8960000,
+            "labels": 8745301
+          }
+        },
+        "independently_recomputed_valid_teacher_labels": {
+          "1": 655,
+          "2": 8745301
+        },
+        "teacher_label_scope": "Stage1: global update indices divisible by1000 plus stage last; Stage2: every valid stored argmax label",
+        "terminal_next_observations_checked": true,
+        "limits": [
+          "IS positivity and batch normalization checked; full historical priorities/probabilities are not stored",
+          "Every sampled slot is linked to its actual recorded transition; no claim of replaying every historical gradient",
+          "Only teacher argmax labels are stored; historical soft teacher logits and imitation-loss values cannot be fully independently reconstructed"
+        ]
+      },
+      "sampler_audit": {
+        "nonunit_importance_weights": 0,
+        "exact_uniform_draws_recomputed": 9599776
+      },
+      "evaluation_audit": {
+        "free_terminal": {
+          "status": "all_pass",
+          "trace_sha256": "fc0e125340b504a86ce942b22823a49bda0d8a5cfe9a82ed01c7b3fd522f0ae3",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 87.07672390619501,
+            "daily_pct": 95.41424647183034,
+            "saving_pct": 8.478407824777825,
+            "baseline_bill": 408.74221861351674,
+            "bill": 374.08738636741776,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -1.0,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "equal_terminal_evaluation": {
+          "status": "all_pass",
+          "trace_sha256": "cee2384d1319050c8bd967a1f989c3e66b2361b87b67631266499ca7eb54484f",
+          "rows": 17520,
+          "neutral_wrapper": true,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 4.57763671875e-05,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.4210854715202004e-14
+          },
+          "metrics": {
+            "pooled_pct": 77.8281783638111,
+            "daily_pct": 94.13048964401088,
+            "saving_pct": 8.780358179279816,
+            "baseline_bill": 408.74221861351674,
+            "bill": 372.853187789315,
+            "final_energy_kwh": 37.5,
+            "energy_change_kwh": 0.0,
+            "energy_min_kwh": 0.0,
+            "energy_max_kwh": 71.14999999999988,
+            "power_min_kw": -1.0000000000000568,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 125,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        },
+        "initial": {
+          "status": "all_pass",
+          "trace_sha256": "2921e3d28e6ace32a7e01b51fecc38b61357734c729edbe36f1498ca9a03131f",
+          "rows": 17520,
+          "neutral_wrapper": false,
+          "independent_weights_available_for_this_trace": true,
+          "independent_Q": {
+            "rows": 17520,
+            "q_mismatch_rows": 0,
+            "action_mismatch_rows": 0,
+            "maximum_batch256_difference": 3.7997961044311523e-07,
+            "batch1_rechecks": 0,
+            "batch_tolerance": {
+              "rtol": 2e-06,
+              "atol": 2e-05
+            },
+            "batch1_tolerance": {
+              "rtol": 2e-07,
+              "atol": 2e-06
+            },
+            "method": "Named FP32 linear/ReLU/dueling equations, no model.forward"
+          },
+          "maximum_errors": {
+            "observation": 0.0,
+            "power": 0.0,
+            "applied_command": 0.0,
+            "energy": 0.0,
+            "conservation": 1.136590821460004e-14
+          },
+          "metrics": {
+            "pooled_pct": 0.614932247564226,
+            "daily_pct": 2.739280536026667,
+            "saving_pct": 0.7331215859793043,
+            "baseline_bill": 408.74221861351674,
+            "bill": 405.7456411778502,
+            "final_energy_kwh": 75.0,
+            "energy_change_kwh": 37.5,
+            "energy_min_kwh": 37.5,
+            "energy_max_kwh": 75.0,
+            "power_min_kw": -0.5,
+            "power_max_kw": 0.9,
+            "unavailable_slots": 422,
+            "viability_adjusted_steps": 0,
+            "availability_evaluation": "archived EV demand > 0.1",
+            "initial_energy_kwh": 37.5
+          },
+          "adjusted_commands_outside_original_grid": 0,
+          "scope": "Native physical equations and source-derived 15D observations; complete days exclude 48-row tail"
+        }
+      },
+      "free_terminal": {
+        "pooled_pct": 87.07672390619501,
+        "daily_pct": 95.41424647183034,
+        "saving_pct": 8.478407824777825,
+        "baseline_bill": 408.74221861351674,
+        "bill": 374.08738636741776,
+        "final_energy_kwh": 75.0,
+        "energy_change_kwh": 37.5,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 75.0,
+        "power_min_kw": -1.0,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 0,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "equal_terminal_evaluation": {
+        "pooled_pct": 77.8281783638111,
+        "daily_pct": 94.13048964401088,
+        "saving_pct": 8.780358179279816,
+        "baseline_bill": 408.74221861351674,
+        "bill": 372.853187789315,
+        "final_energy_kwh": 37.5,
+        "energy_change_kwh": 0.0,
+        "energy_min_kwh": 0.0,
+        "energy_max_kwh": 71.14999999999988,
+        "power_min_kw": -1.0000000000000568,
+        "power_max_kw": 0.9,
+        "unavailable_slots": 422,
+        "viability_adjusted_steps": 125,
+        "availability_evaluation": "archived EV demand > 0.1",
+        "initial_energy_kwh": 37.5
+      },
+      "paired_drop_pp": {
+        "free_terminal": {
+          "pooled_pct": 0.012858573266200324,
+          "daily_pct": 0.1967319215048775,
+          "saving_pct": 0.07724551439695126
+        },
+        "equal_terminal_evaluation": {
+          "pooled_pct": 1.3893756263183832,
+          "daily_pct": 0.550887261950237,
+          "saving_pct": 0.048629549713020026
+        }
+      }
+    }
+  ],
+  "aggregate": [
+    {
+      "variant": "full",
+      "phase": "free_terminal",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 86.88072644706138,
+          "sample_sd": 0.27459388520361505,
+          "min": 86.47745129162173,
+          "max": 87.08958247946121,
+          "mean_paired_drop_pp": 0.0,
+          "min_paired_drop_pp": 0.0,
+          "max_paired_drop_pp": 0.0
+        },
+        "daily_pct": {
+          "mean": 95.47454234951532,
+          "sample_sd": 0.11295249229633589,
+          "min": 95.35714980821335,
+          "max": 95.61097839333522,
+          "mean_paired_drop_pp": 0.0,
+          "min_paired_drop_pp": 0.0,
+          "max_paired_drop_pp": 0.0
+        },
+        "saving_pct": {
+          "mean": 8.570841305788168,
+          "sample_sd": 0.054580301488069895,
+          "min": 8.503248599143125,
+          "max": 8.631089792877779,
+          "mean_paired_drop_pp": 0.0,
+          "min_paired_drop_pp": 0.0,
+          "max_paired_drop_pp": 0.0
+        }
+      }
+    },
+    {
+      "variant": "full",
+      "phase": "equal_terminal_evaluation",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 78.74020935627888,
+          "sample_sd": 1.2513278300396513,
+          "min": 77.68538619205162,
+          "max": 80.2919239737437,
+          "mean_paired_drop_pp": 0.0,
+          "min_paired_drop_pp": 0.0,
+          "max_paired_drop_pp": 0.0
+        },
+        "daily_pct": {
+          "mean": 94.2659314467348,
+          "sample_sd": 0.3003187057255062,
+          "min": 94.01821735161957,
+          "max": 94.68137690596112,
+          "mean_paired_drop_pp": 0.0,
+          "min_paired_drop_pp": 0.0,
+          "max_paired_drop_pp": 0.0
+        },
+        "saving_pct": {
+          "mean": 8.858808468510198,
+          "sample_sd": 0.04681657455504618,
+          "min": 8.812962350120719,
+          "max": 8.91563525406156,
+          "mean_paired_drop_pp": 0.0,
+          "min_paired_drop_pp": 0.0,
+          "max_paired_drop_pp": 0.0
+        }
+      }
+    },
+    {
+      "variant": "no_double",
+      "phase": "free_terminal",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 87.03674955663747,
+          "sample_sd": 0.26860960265479705,
+          "min": 86.66866007671284,
+          "max": 87.25451989212488,
+          "mean_paired_drop_pp": -0.15602310957610044,
+          "min_paired_drop_pp": -0.7399131573311877,
+          "max_paired_drop_pp": 0.2863160276090895
+        },
+        "daily_pct": {
+          "mean": 95.42450604059343,
+          "sample_sd": 0.21818299415897793,
+          "min": 95.09926191313843,
+          "max": 95.55361088283044,
+          "mean_paired_drop_pp": 0.05003630892189648,
+          "min_paired_drop_pp": -0.14196474591669528,
+          "max_paired_drop_pp": 0.2578878950749157
+        },
+        "saving_pct": {
+          "mean": 8.596436569198763,
+          "sample_sd": 0.03591192801848458,
+          "min": 8.545749904879003,
+          "max": 8.622833089947171,
+          "mean_paired_drop_pp": -0.025595263410594704,
+          "min_paired_drop_pp": -0.0671797507723948,
+          "max_paired_drop_pp": 0.010096867971626011
+        }
+      }
+    },
+    {
+      "variant": "no_double",
+      "phase": "equal_terminal_evaluation",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 78.16720871767916,
+          "sample_sd": 0.3792643014402103,
+          "min": 77.6647201068448,
+          "max": 78.58496447742664,
+          "mean_paired_drop_pp": 0.5730006385997335,
+          "min_paired_drop_pp": -0.4650462694966251,
+          "max_paired_drop_pp": 1.7069594963170687
+        },
+        "daily_pct": {
+          "mean": 94.43095823890098,
+          "sample_sd": 0.3502752699424055,
+          "min": 94.04252715785806,
+          "max": 94.89060490320614,
+          "mean_paired_drop_pp": -0.16502679216618077,
+          "min_paired_drop_pp": -0.6023556481384986,
+          "max_paired_drop_pp": 0.24486395255428306
+        },
+        "saving_pct": {
+          "mean": 8.896069186324443,
+          "sample_sd": 0.04117377172975585,
+          "min": 8.834890483772602,
+          "max": 8.92191970595425,
+          "mean_paired_drop_pp": -0.03726071781424478,
+          "min_paired_drop_pp": -0.09293197696141497,
+          "max_paired_drop_pp": -0.0031336552641434423
+        }
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "phase": "free_terminal",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 86.28798820039304,
+          "sample_sd": 0.3986016357607984,
+          "min": 85.93717707918249,
+          "max": 86.85930518612889,
+          "mean_paired_drop_pp": 0.592738246668322,
+          "min_paired_drop_pp": 0.14159072671172623,
+          "max_paired_drop_pp": 1.1524054002787238
+        },
+        "daily_pct": {
+          "mean": 94.74695979871943,
+          "sample_sd": 0.33693574339151044,
+          "min": 94.37954613222797,
+          "max": 95.17939931022802,
+          "mean_paired_drop_pp": 0.7275825507958835,
+          "min_paired_drop_pp": 0.33899574937093746,
+          "max_paired_drop_pp": 1.2314322611072441
+        },
+        "saving_pct": {
+          "mean": 8.608663886473172,
+          "sample_sd": 0.0944153280771686,
+          "min": 8.47252401511671,
+          "max": 8.681921853248207,
+          "mean_paired_drop_pp": -0.03782258068500344,
+          "min_paired_drop_pp": -0.12626851407343054,
+          "max_paired_drop_pp": 0.03072458402641587
+        }
+      }
+    },
+    {
+      "variant": "no_dueling",
+      "phase": "equal_terminal_evaluation",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 77.4188104178449,
+          "sample_sd": 0.75094360219601,
+          "min": 76.72629045934896,
+          "max": 78.16620026218989,
+          "mean_paired_drop_pp": 1.3213989384339833,
+          "min_paired_drop_pp": -0.4808140701382655,
+          "max_paired_drop_pp": 3.471542393933234
+        },
+        "daily_pct": {
+          "mean": 93.63103400353623,
+          "sample_sd": 0.5591114440361044,
+          "min": 93.16114843632975,
+          "max": 94.44120035643876,
+          "mean_paired_drop_pp": 0.6348974431985752,
+          "min_paired_drop_pp": -0.3653180821478941,
+          "max_paired_drop_pp": 1.1833393297124957
+        },
+        "saving_pct": {
+          "mean": 8.925022913537353,
+          "sample_sd": 0.0650837283311588,
+          "min": 8.828363474471345,
+          "max": 8.969058255373424,
+          "mean_paired_drop_pp": -0.06621444502715557,
+          "min_paired_drop_pp": -0.1268676747664763,
+          "max_paired_drop_pp": -0.01540112435062646
+        }
+      }
+    },
+    {
+      "variant": "no_per",
+      "phase": "free_terminal",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 86.74245013179124,
+          "sample_sd": 0.35062572408955267,
+          "min": 86.25150593604684,
+          "max": 87.07672390619501,
+          "mean_paired_drop_pp": 0.13827631527013295,
+          "min_paired_drop_pp": -0.3867922211256456,
+          "max_paired_drop_pp": 0.7493899767937791
+        },
+        "daily_pct": {
+          "mean": 95.20878689322754,
+          "sample_sd": 0.1521194588376986,
+          "min": 95.06226490844651,
+          "max": 95.41424647183034,
+          "mean_paired_drop_pp": 0.2657554562877742,
+          "min_paired_drop_pp": 0.18759640288583057,
+          "max_paired_drop_pp": 0.38380860099354663
+        },
+        "saving_pct": {
+          "mean": 8.487534275622584,
+          "sample_sd": 0.06293183172441155,
+          "min": 8.403033532597247,
+          "max": 8.5460643767231,
+          "mean_paired_drop_pp": 0.08330703016558427,
+          "min_paired_drop_pp": -0.019382769249038034,
+          "max_paired_drop_pp": 0.22805626028053183
+        }
+      }
+    },
+    {
+      "variant": "no_per",
+      "phase": "equal_terminal_evaluation",
+      "n": 4,
+      "metrics": {
+        "pooled_pct": {
+          "mean": 77.47823295792804,
+          "sample_sd": 0.45629821611117793,
+          "min": 76.80706240837117,
+          "max": 77.8281783638111,
+          "mean_paired_drop_pp": 1.2619763983508427,
+          "min_paired_drop_pp": 0.13418804832332398,
+          "max_paired_drop_pp": 2.6460181350812064
+        },
+        "daily_pct": {
+          "mean": 93.92322580577192,
+          "sample_sd": 0.1766097307647178,
+          "min": 93.70746056580079,
+          "max": 94.13048964401088,
+          "mean_paired_drop_pp": 0.34270564096288325,
+          "min_paired_drop_pp": 0.13559570349939065,
+          "max_paired_drop_pp": 0.550887261950237
+        },
+        "saving_pct": {
+          "mean": 8.801681733717077,
+          "sample_sd": 0.08054506380494288,
+          "min": 8.706133707832452,
+          "max": 8.899161854723046,
+          "mean_paired_drop_pp": 0.05712673479312125,
+          "min_paired_drop_pp": -0.008110842912273597,
+          "max_paired_drop_pp": 0.1715148330332248
+        }
+      }
+    }
+  ]
+}
